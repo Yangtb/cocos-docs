@@ -29,7 +29,7 @@ pushScene和popScene这两个方法用来在不释放旧场景内存下运行新
 
 ```
 	cc.LoaderScene.preload(g_resources, function () {
-    	cc.director.runScene(new PlayScene());
+    	cc.director.runScene(new StartScene());
     }, this);
 ```
 

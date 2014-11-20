@@ -94,7 +94,7 @@ addSushi : function() {
 	}
 ```
 上面代码创建了一个sushi精灵并添加到层上。其中x坐标值随机。`cc.random0To1`返回0~1之间的随机数值。
-然后在ctor中调用改方法添加sushi精灵。
+然后在ctor中调用该方法添加sushi精灵。
 
 ```
 	this.addSushi();
