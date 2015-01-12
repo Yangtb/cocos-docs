@@ -6,7 +6,7 @@ Cocos Studio is a cross-platform game editor, in order to ensure uniform operati
 
 #### Menu Bar
 
-In the "Windows",Cocos Studio menu bar at the top of the editor interface,is located above the toolbar.In the "OS X", Cocos Studio menu bar same as the most of "OS X" applications, is located in the operating system menu bar，typically the operating system menu bar at the top of the window
+In the "Windows", Cocos Studio menu bar at the top of the editor interface,is located above the toolbar.In the "OS X", Cocos Studio menu bar same as the most of "OS X" applications, is located in the operating system menu bar, typically the operating system menu bar at the top of the window
 
 ### File Path
 

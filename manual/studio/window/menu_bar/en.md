@@ -87,7 +87,7 @@ Creates a new project. If a project is already opened, Cocos Studio prompts you 
 #### Help(ALT+H)
 
 - See the help（F1）   
-	See the online help documentation。
+	See the online help documentation.
 - About "Cocos Studio"   
 	Open the 
 - The new version check up.

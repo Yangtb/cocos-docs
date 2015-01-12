@@ -38,4 +38,4 @@ When using the automatic recording frame, there is one caveat: be sure to move t
 
 You can perform the following operations on a single key frame: move around, copy, cut, paste, delete.
 
-You can also select multiple frames and perform the above function at the sametime.
+You can also select multiple frames and perform the above function at the same time.

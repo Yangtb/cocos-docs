@@ -86,13 +86,13 @@ cc.SAXParser.getInstance()          --> cc.saxParser
 cc.PlistParser.getInstance()        --> cc.plistParser
 ```
 
-Note that all objects have been named with first character lowercase, it is for identify the difference between objects and classes.
+Note that all objects have been named with first character lower cased, it is for identify the difference between objects and classes.
 
 And another note for `cc.view`, as `cc.EGLView` was originally ported from Cocos2d-iPhone, so it took the name of iOS's openGL view. But in Cocos2d-html5, it is really just a view which could be a 2d canvas view or a GL view for our game, so we decided to rename it to a simple `cc.view`.
 
 ##The result
 
-After the refactoration, here are the same example as the beginning in v3.0 : 
+After the refactorization, here are the same example as the beginning in v3.0 : 
 
 ```
 cc.spriteFrameCache.addSpriteFrames(s_boxs_plist);

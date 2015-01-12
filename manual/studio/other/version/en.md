@@ -21,4 +21,4 @@ In the Beta release, available features will still be considered,Translatable st
 
 ### Release Version
 
-The release version is usually resolved known vulnerabilities, capabilities have been improved.The release version is the result of several rounds of testing modifications after the completion of the internal version.Typically the release version does not do a lot of content changes, new features will be provided for compatibility testing to guarantee the availability of data.User version upgrade after the official release will also be protected.
+The release version is usually resolved known vulnerabilities, capabilities have been improved.The release version is the result of several rounds of testing modifications after the completion of the internal version.Typically the release version does not do a lot of content changes, new features will be provided for compatibility testing to guarantee the availability of data. User version upgrade after the official release will also be protected.

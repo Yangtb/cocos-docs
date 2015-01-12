@@ -23,5 +23,5 @@ To change the text, you can either double click, right click, or modify the prop
   
  ![image](res/image083.png)
 
-When you enter characters thats not in the fnt file, these missing characters will be displayed as spaces.
+When you enter characters that's not in the fnt file, these missing characters will be displayed as spaces.
 

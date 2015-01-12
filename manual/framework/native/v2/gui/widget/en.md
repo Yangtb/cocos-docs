@@ -81,7 +81,7 @@ There are not too much properties in here, but many images loaded-two status ima
 
 ```
 
-There are two statuses for a checkbox-selected and unselected. It chages its status when it is touched, we can call some callback functions to do something. As shown, when the status changed, it will call the function to inform the checkbox.
+There are two statuses for a checkbox-selected and unselected. It changes its status when it is touched, we can call some callback functions to do something. As shown, when the status changed, it will call the function to inform the checkbox.
 
 ![uicheckboxs](res/uicheckboxs.png)
 
@@ -104,7 +104,7 @@ It's a good choice to choose slider if you want to add a widget controling the v
 
 ![uislider](res/uislider.png)
 
-We take different ways to load images, `loadBarTexture` for slider background image and `loadSlidBallTextures` for  three statuses image of slider. That is the center ball can be draged. However, `loadProgressBarTexture` method displaying the progress of the slider. It also has callback function, which can be used for record current status:
+We take different ways to load images, `loadBarTexture` for slider background image and `loadSlidBallTextures` for  three statuses image of slider. That is the center ball can be dragged. However, `loadProgressBarTexture` method displaying the progress of the slider. It also has callback function, which can be used for record current status:
 
 ``` c++
     void UISliderTest::percentChangedEvent(Object *pSender, SliderEventType type)
@@ -123,7 +123,7 @@ By dynamic cast pSender to get UISlider, then get the percentage of UISlider to 
 
 ### UILoadingBar
 
-In contrast to the slider is a progress bar, one of them is controling progress manually then return value and the other is seting vaule manually then update displaying. For example, when we loading some image resource the progress can show us the loading progress. Following is one usage:
+In contrast to the slider is a progress bar, one of them is controlling progress manually then return value and the other is setting value manually then update displaying. For example, when we loading some image resource the progress can show us the loading progress. Following is one usage:
 
 ``` c++
     UILoadingBar* loadingBar = UILoadingBar::create();
@@ -154,7 +154,7 @@ We did some intialize work above, if you want to get new value in real time then
     }
 
 ```
-It's a inreasement number start from zero, you can see from left to right the length of process bar is increasing. If you want the process bar's length increasing from right from left, you can set `loadingBar->setDirection(LoadingBarTypeRight);` and this widget support squared picture.
+It's an increasing number starting from zero, you can see from left to right the length of process bar is increasing. If you want the process bar's length increasing from right from left, you can set `loadingBar->setDirection(LoadingBarTypeRight);` and this widget support squared picture.
 
 ### UILabelAtlas
 
@@ -208,11 +208,11 @@ Text area widget can help us solve some problems such as auto wrap and so on. It
 
 ![uitextarea](res/uitextarea.png)
 
-You need to know the size of a text area, and its alignmet(Use `setTextHorizontalAlignment` to set the align mode: Left, Right and Center), display content, font size and font etc.
+You need to know the size of a text area, and its alignment(Use `setTextHorizontalAlignment` to set the align mode: Left, Right and Center), display content, font size and font etc.
 
 ### UITextField
 
-Text Field is a very important widget, it can call device's input system to recive user's input content such as user name and password in a login scene.
+Text Field is a very important widget, it can call device's input system to receive user's input content such as user name and password in a login scene.
 
 ``` c++
     UITextField* textField = UITextField::create();
@@ -280,7 +280,7 @@ First, it have four event type:
 
 Accroding to the event type, we can get widget's content or change widget's properties in real time. We can set widget's max text length by `textField->setMaxLength(3);`.
 
-In a login scene, we usually design a user name box and a password box, and the widget absoluetely support password box's property:
+In a login scene, we usually design a user name box and a password box, and the widget absolutely support password box's property:
 
 ``` c++
     textField->setPasswordEnabled(true);

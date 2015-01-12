@@ -1,4 +1,4 @@
-# Let's Build a Parkour Game
+ar# Let's Build a Parkour Game
 
 ## Overview
 
@@ -42,9 +42,9 @@ The screenshot shows the structure of IronCity. We separated the sources into 3 
 
 - SettingUI.js: SettingUI is a UI layer for setting. If you touch the setting button on the game scene (setting is belong to MenuUI), it will pause the game and create the SettingUI. It can switch off or switch on the music effect, regulate the volume of music , return to the game and back to the main menu scene.
 
-- Monster.js: There are two kinds of monsters in IronCity. The Monster class extends from cc.Node get the functions of generating, destroying, moving the monsters and playing the animations of monsters. The animations of monsters is created by Animation Ediotr. But they are just some pictures’s replacement work, they don’t use any armatures here. So I don’t talk too much about this animations here. Later we will see a complete armature animation in next section.
+- Monster.js: There are two kinds of monsters in IronCity. The Monster class extends from cc.Node get the functions of generating, destroying, moving the monsters and playing the animations of monsters. The animations of monsters is created by Animation Editor. But they are just some picture's replacement work, they don’t use any armatures here. So I don’t talk too much about this animations here. Later we will see a complete armature animation in next section.
 
-- Player.js: Player is a class extend from cc.Layer. Player includes an armature called “imManArmature”. This is CocoMan’s armature. The major functions of Player is to load and play 7 animations of CocoMan’s armature. I’m going to talk about the running anmation to show you how to build an armature by Animation Editor.
+- Player.js: Player is a class extend from cc.Layer. Player includes an armature called “imManArmature”. This is CocoMan’s armature. The major functions of Player is to load and play 7 animations of CocoMan’s armature. I’m going to talk about the running animation to show you how to build an armature by Animation Editor.
 
 ## Design the Required Game Components
 
@@ -60,7 +60,7 @@ The 3 menus are called “GameMenuUI”, “GameSceneOverLayer”, “GameSceneS
 
 # A Step by Step Process to Make "GameMenuUI"
 
-## Decide Which Kind of Widgets Shoule be Included
+## Decide Which Kind of Widgets Should be Included
 
 Firstly, decide what is needed in the UI. The “GameMenuUI” of IronCity is easy to draw. Here I want a blood bar, distance score and setting button. I’d  open the CocoStudio, choose the UI Editor, create new project from the file. 
 
@@ -88,7 +88,7 @@ Here I have added all widgets I need and set up the pictures from resources. The
 
 ## Set Properties and Export
 
-The final step is self-expalnatory. I have everything prepared for my “GameMenuUI”. Just click “export projects” in the File. Most of the time, we use the default setting for exporting. Don’t forget to set the properties of the widgets before exporting. For example, if you didn’t tick the “touchable” in the properties of Panel, everything belongs to Panel cannot be touched, even if the child node has ticked the “touchable” in its own property.
+The final step is self-explanatory. I have everything prepared for my “GameMenuUI”. Just click “export projects” in the File. Most of the time, we use the default setting for exporting. Don’t forget to set the properties of the widgets before exporting. For example, if you didn’t tick the “touchable” in the properties of Panel, everything belongs to Panel cannot be touched, even if the child node has ticked the “touchable” in its own property.
 
 ![](res/set-properties-before-export.png)
 
@@ -99,7 +99,7 @@ The final step is self-expalnatory. I have everything prepared for my “GameMen
 
 ![](res/put-all-files-into-resources.png)
 
-*Figure 14: Put all of the expoerted files into your game resources*
+*Figure 14: Put all of the exported files into your game resources*
 
 After exporting, you will see a number of files in the “export” folder of your CocoStudio project. Put all of them into your game resources. There would also be a “json” format file. This is a JavaScript Object Notation file, a kind of data exchange language. All of your settings in the UI Editor have been saved in this file. It’s not difficult to read a “json” format file. So sometimes you may figure out your problems through this file.
 
@@ -125,13 +125,13 @@ Different widgets will have their own interfaces to be called in the program. Fo
 
 # A Step by Step Process to MAke "CMRun"
 
-## Creating Proejct
+## Creating Project
 
 We are going to create a running animation for the cocoMan. First, same as the “GameMenuUI”,  I built a new project named “running,” then I dragged all of my resources into Resources Menu.
 
 ![](res/animation-editor-ironcity.png)
 
-*Fiture 17: Animation Editor*
+*Figure 17: Animation Editor*
 
 The picture is the screenshot. The default mode is in the Posing Mode, and you can change it into Animation Mode with the button in the upper left corner. 
 
@@ -199,7 +199,7 @@ These are the key frames of running animation. The Frame 40 is missing because t
 
 ![](res/Create-Armaute-and-Run.png)
 
-*Figure 25: Create Armaute and Run*
+*Figure 25: Create Armature and Run*
 
 We have finished the armature and animation. You’ll find 3 files in the export folder after exporting(default way). 
 
@@ -227,7 +227,7 @@ There are 2 ways to call back a function for the armatures. One is <code>*setMov
 
 *Figure 26: Scene Editor Sample: RPGGame on CocoStudio v1.1.0*
 
-The picture is the sample called RPGGame on the start page of Scene Edtior. The interface of Scene Editor is similar to that of  UI Editor. And the general operation is the same story for the UI Editor. You add the resources, drag the widgets, set the properties and export the project. Here are some introduction to show the features.
+The picture is the sample called RPGGame on the start page of Scene Editor. The interface of Scene Editor is similar to that of  UI Editor. And the general operation is the same story for the UI Editor. You add the resources, drag the widgets, set the properties and export the project. Here are some introduction to show the features.
 
 ![](res/Play-stop-and-connect-to-device-button.png)
 
@@ -245,7 +245,7 @@ The picture is the sample called RPGGame on the start page of Scene Edtior. The 
 
 *Figure 29: Names of the widgets in Scene Editor*
 
-**Armature Componet:** CCArmautre in Cocos2d-html5. Dragging your armautre resources (usually a “ExportJson” format file built by Animation Editor) into the Aramture File would load the armature to your Scene. Then you can choose which animation to play in the Animations List. 
+**Armature Component:** CCArmautre in Cocos2d-html5. Dragging your armature resources (usually a “ExportJson” format file built by Animation Editor) into the Armature File would load the armature to your Scene. Then you can choose which animation to play in the Animations List. 
 
 ![](res/Fight-Scene.png)
 

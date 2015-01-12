@@ -11,22 +11,22 @@ Double click the folder *cocos2d-x* and you will find a lot of files and folders
 
 ![directory](./res/cocos2dxdirectory.png)
 
-Before configuring the development environment, let's download some dependency softwares at first.
+Before configuring the development environment, let's download some dependency software first.
 
 #### Download JDK, SDK and NDK
 Since we are trying to develop Android games, so Java is a necessary toolkit.
 
-- Open Your Terminal(You can hit Control-Space to open Spotlight and enter "Terminal" and hit "Enter" key), input the following commands to verify whether your machine supports java or not.
+- Open Your Terminal(You can hit Control-Space to open Spotlight and enter "Terminal" and hit "Enter" key), input the following commands to verify whether your machine supports Java or not.
 
 ```
 java -version
 ```
 If the following lines shown on your Terminal then you may have get [JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) properly installed.
 
-(Note, the java version number may be different, but it's doesn't matter. As to Cocos2d-x, you could upgrade the JDK and we recommend you to install JDK 1.6 or 1.7)
+(Note, the Java version number may be different, but it's doesn't matter. As to Cocos2d-x, you could upgrade the JDK and we recommend you to install JDK 1.6 or 1.7)
 
 ```
-java version "1.7.0_51"
+Java version "1.7.0_51"
 Java(TM) SE Runtime Environment (build 1.7.0_51-b13)
 Java HotSpot(TM) 64-Bit Server VM (build 24.51-b03, mixed mode)
 ```
@@ -45,7 +45,7 @@ After downloading it, unzip the package at the same location of the Android SDK.
 
 
 #### Verify Your Environment
-Aha, we have installed all the required softwares. Let's do the final verification.
+Aha, we have installed all the required software. Let's do the final verification.
 
 At first, we should verify that *python 2.7* is installed and it is accessible under the current user's environment which means you could type `python --version` in your Terminal(or Command Line on win32) and it will give you the following result:
 
@@ -69,11 +69,11 @@ brew install ant
 
 
 ### Time in Action - Step By Step Guides
-Configure Andriod development environment is really tough but worth it, isn't it? 
+Configure Android development environment is really tough but worth it, isn't it? 
 
 Without any further ado, let's rock!
 #### Use setup.py to configure your android development environment
-At first, open your Termial and cd to *~/cocos2d-x*.
+At first, open your Terminal and cd to *~/cocos2d-x*.
 
 If you type *ls* command, it will show you all the files. 
 
@@ -94,7 +94,7 @@ Here is the screenshot:
 
 ![setuppy02](./res/setuppy02.png)
 
-Now it's time to repeat the last process to configure the *ANDROID_SDK_ROOT*. You can simply input `/Users/guanghui/AndroidDev/adt-bundle-mac-x86_64-20130522/sdk/`. The adt-bundle-mac-x86_64-xxxx, the xxxx number maybe different. So please note this non-trival difference.
+Now it's time to repeat the last process to configure the *ANDROID_SDK_ROOT*. You can simply input `/Users/guanghui/AndroidDev/adt-bundle-mac-x86_64-20130522/sdk/`. The adt-bundle-mac-x86_64-xxxx, the xxxx number maybe different. So please note this non-trivial difference.
 
 If you don't install *ant* program, you should install *ant* first.
 
@@ -138,7 +138,7 @@ If you only type `python android-build.py` in the Terminal, it will give you the
 
 Please read the help information carefully when this is your first time trying to build Cocos2d-x.
 
-If all things are going well, you will get the following meesages:
+If all things are going well, you will get the following messages:
 
 ![buildsuccess](./res/buildsuccess.png)
 

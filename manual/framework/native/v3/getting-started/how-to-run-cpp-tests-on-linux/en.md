@@ -19,7 +19,7 @@ The document is suitable for version v3.0rc or newer.
 
 * **[Install Dependences](id:anchor4)**
 
-	The dependenced libraries are:
+	The depended libraries are:
 
 		libx11-dev
 		libxmu-dev
@@ -40,11 +40,11 @@ The document is suitable for version v3.0rc or newer.
     	$ cd $cocos2dx_root/build
     	$ ./install-deps-linux.sh
 
-	Otherwise, you should install the depences by yourself.
+	Otherwise, you should install the dependencies by yourself.
 
 * **[Generate makefile](id:anchor5)**
 
-	After the dependened libs are installed, run `cmake` to generate `makefile`:
+	After the depended libs are installed, run `cmake` to generate `makefile`:
 
     	$ mkdir linux-build
     	$ cd linux-build

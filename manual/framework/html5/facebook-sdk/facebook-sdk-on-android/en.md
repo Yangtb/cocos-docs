@@ -149,7 +149,7 @@ Please visit [Facebook API Reference for Cocos2d-JS](../api-reference/zh.md)
 
 ## Package your project into apk
 
-You can use Cocos2d-JS built-in tool - _Cocos Console_ to package your project into an apk file, Run the following command in terminal or commandline under your project folder:
+You can use Cocos2d-JS built-in tool - _Cocos Console_ to package your project into an apk file, Run the following command in terminal or command line under your project folder:
 
 ```
 cocos compile -p android

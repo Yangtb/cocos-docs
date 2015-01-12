@@ -26,18 +26,18 @@ We are happy to announce the release of:
 * Added support to build Android's APK files in the `android-build.py` script
 * Added `Scheduler::performFunctionInCocosThread()`. It supports executing a function in the cocos2d thread
 * `Director` emits the following events using the `EventDispatcher`: `AFTER_UPDATE`, `AFTER_DRAW`, `AFTER_VISIT` and `PROJECTION_CHANGED`
-* Added Cocos2dxActivity.java which inherits from native activity. Ingetrating 3rd Android SDK would be much easilier on v3.0.
+* Added Cocos2dxActivity.java which inherits from native activity. Integrating 3rd Android SDK would be much easier on v3.0.
 
 ### Documents for v3.0 ###
-* [Introdution of New Renderer](../manual/framework/native/renderer/en.md)
+* [Introduction of New Renderer](../manual/framework/native/renderer/en.md)
 * [Mechanism of Event Dispatcher](../manual/framework/native/input/event-dispatcher/en.md)
-* [Physcis Integration](../manual/framework/native/physics/physics-integration/en.md)
+* [Physics Integration](../manual/framework/native/physics/physics-integration/en.md)
 * [Particle System Comparison of v2.x and v3.0](../manual/framework/native/graphic/particle/v3/en.md)
 * [Improved Label in v3.0](../manual/framework/native/gui/label/v3/en.md)
 * Template containers: [cocos2d::Map<>](../manual/framework/native/data-structure/v3/map/en.md), [cocos2d::Vector<>](../manual/framework/native/data-structure/v3/vector/en.md). v3.0 uses `cocos2d::Map<>` instead of CCDictionary, `cocos2d::Vector<>` instead of CCArray.
 * [cocos2d::Value](../manual/framework/native/data-structure/v3/value/en.md) wrapping many basic data types such as `int`,`float`,`double`,`bool`,`unsigned char`,`char*` and `std::string`.
 * GUI System series: [Overview](../manual/framework/native/gui/overview/en.md), [UI Containers](../manual/framework/native/gui/container/en.md) like Layout, ScrollView, PageView, and [UI Widgets](../manual/framework/native/gui/widget/en.md) including  CheckBox, LoadingBar, Slider, Button, TextField etc.
-* [Javascript Remote Debugging with Firefox debugger](../manual/framework/native/scripting/javascript/js-remote-debugger/en.md) would be helpful to developers using JavaScript bindings on cocos2d-x
+* [JavaScript Remote Debugging with Firefox debugger](../manual/framework/native/scripting/javascript/js-remote-debugger/en.md) would be helpful to developers using JavaScript bindings on cocos2d-x
 
 ### More Info ###
 
@@ -71,7 +71,7 @@ Read more about all the new features at [Cocos2d-x v3.0 release notes](http://ww
 * `cc.LabelTTF` now supports automatic line break with occidental and Chinese characters.
 * Added support for `cc.ClippingNode` in canvas mode.
 * Improved performance in `setPosition` and `getPosition` in `cc.Node` and `cc.Sprite` in about 65%.
-* `cc.Node`'s `setContentSize` and `setAnchorPoint` support pasing `x` and `y` as arguments. `setAnchorPoint(x,y)` is 35% faster than `setAnchorPoint(Point(x,y))`
+* `cc.Node`'s `setContentSize` and `setAnchorPoint` support passing `x` and `y` as arguments. `setAnchorPoint(x,y)` is 35% faster than `setAnchorPoint(Point(x,y))`
 * Added `NPM` support and adjusted folder structure. It supports modules customization, the packaged mini engine and HelloWorld is just `185KB` in single file mode. Please visit [Cocos-utils for NPM Guide](../manual/framework/html5/cocos-utils/en.md) for more details.
 * Added SpriteFrameCache `JSON` format support.
 

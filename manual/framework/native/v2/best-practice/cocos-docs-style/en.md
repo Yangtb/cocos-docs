@@ -26,7 +26,7 @@ ja.md // Japanese version
 
 2. Create a `res` folder for any images or other resource file related to the document
 
-3. Overall Folder Stucture
+3. Overall Folder Structure
 
 ```
 - catalog // keeps the catalog file

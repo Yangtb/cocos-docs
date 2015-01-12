@@ -1,4 +1,4 @@
-#Compile Anroid project in eclipse
+#Compile Android project in eclipse
 
 This document will show you how to compile a Cocos2d-JS Android project in eclipse.
 
@@ -30,11 +30,11 @@ In `Builders`, click `New..`, select `program` and click OK button.
 
 ![](./res/4.png)
 
-Now we begin to setup the builder. Click `Browse Worksapce` to set the command loacation, select the `build_native.py`.
+Now we begin to setup the builder. Click `Browse Workspace` to set the command location, select the `build_native.py`.
 
 ![](./res/5.png)
 
-Click `Brwose Worksapce` to set the working directory, select MyGame and click OK.
+Click `Browse Workspace` to set the working directory, select MyGame and click OK.
 
 ![](./res/6.png)
 

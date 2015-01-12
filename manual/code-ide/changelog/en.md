@@ -1,3 +1,19 @@
+Cocos Code IDE 1.1.0
+
+	[NEW] ARM DS-5 integration, get more details from:
+	
+[ARM DS-5 Promote Android Game Development](http://www.cocos2d-x.org/wiki/DS-5_Support_Android_Development) and [Debug C++ Code with DS-5](http://www.cocos2d-x.org/wiki/Debug_C++_Code_with_DS-5)
+
+	[NEW] Remove JDK to reduce the install package size
+	[NEW] "void" is treated as keyword in JavaScript
+	[NEW] Add "DebugPort" for customing debug port in cocos lua project
+	[NEW] Only show iOS build target when package to IPA
+	[NEW] Add "refresh" button for detecting devices
+	[NEW] Performance optimization adding breakpoint when JavaScript has been suspended
+	
+	[FIX] Importing project failed if IDE haven't set framework path
+	[FIX] Many localization bugs
+
 Cocos Code IDE 1.0.2
 
 	[NEW] Live coding switch
@@ -5,7 +21,7 @@ Cocos Code IDE 1.0.2
 	[NEW] "Open Declaration" feature enhancement
 	[NEW] Desktop runtime arguments support
 	
-	[FIX] Build iOS divice runtime failed
+	[FIX] Build iOS device runtime failed
 	[FIX] Can't auto update on Windows
 	[FIX] Add breakpoint failed in JavaScript occasionally
 	[FIX] Delete js files in frameworks when add native code
@@ -50,7 +66,7 @@ Cocos Code IDE 1.0.0-rc0
 	[NEW] Support for variable hover displaying
 	[NEW] Code Auto-complete feature enhancement
 	[NEW] Code Auto-complete performance improving
-	[NEW] Support cocos porject upgrading
+	[NEW] Support cocos project upgrading
 	[NEW] Add some useful buttons on toolbar
 	[NEW] Custom other ports instead of 6010/6050
 	[NEW] Package an iOS IPA
@@ -60,7 +76,7 @@ Cocos Code IDE 1.0.0-rc0
 
 Cocos Code IDE 1.0.2.beta
 
-    [NEW] Add a backgroud to runtime's "Wait for debug" page
+    [NEW] Add a background to runtime's "Wait for debug" page
     [NEW] Rename filename
     
     [FIX] Lua debugger can't step into/step over

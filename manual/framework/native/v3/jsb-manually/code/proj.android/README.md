@@ -21,7 +21,7 @@ There are two ways of building Android projects.
 	* Build and Run whole project.
 	* Logcat view.
 	* Debug Java code.
-	* Javascript editor.
+	* JavaScript editor.
 	* Project management.
 2. True C++ editing, including:
 	* Code completion. 

@@ -19,9 +19,9 @@ In this article, I will show you how to run cpp-tests on your windows PC.
 visit the MSDN's windows phone link of developer register [http://msdn.microsoft.com/en-us/library/windowsphone/help/jj206719(v=vs.105)](http://msdn.microsoft.com/en-us/library/windowsphone/help/jj206719(v=vs.105))
 ![](res/4.png)
 
-fill with your windows account and regist Windows phone developer account in steps
+fill with your windows account and register Windows phone developer account in steps
 
-explanation of the Windows account：your account of Hotmail or SkyDrive or Xbox LIVE
+explanation of the Windows account: your account of Hotmail or SkyDrive or Xbox LIVE
 
 the fee of developer account: $19 per year, while students account is free but cannot release applications with fees.
 
@@ -31,7 +31,7 @@ the fee of developer account: $19 per year, while students account is free but c
 
 ![](res/1.png)
 
-- Open file "cocos2d-wp8.vc2012.sln" in "build" folder as fllowing:
+- Open file "cocos2d-wp8.vc2012.sln" in "build" folder as following:
 
 ![](res/2.png)
 
@@ -50,6 +50,6 @@ right click cpp-tests, select "Properties", in "Debug", you can select debug tar
 
 ![](res/7.png)
 
-If you select "Managed Only" in "UI Task", it's to debug c# code in cpp-tests. And if you select "Native Only", it's to debug c++ code in cpp-testsComponent. Note that If you select "Native Only" and want to use CCLog function to write log in Output, right click cpp-testsComponent and define "COCOS2D_DEBUG=1" in "Preprocessor Definitions"：
+If you select "Managed Only" in "UI Task", it's to debug c# code in cpp-tests. And if you select "Native Only", it's to debug c++ code in cpp-testsComponent. Note that If you select "Native Only" and want to use CCLog function to write log in Output, right click cpp-testsComponent and define "COCOS2D_DEBUG=1" in "Preprocessor Definitions":
 
 ![](res/8.png)

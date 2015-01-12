@@ -17,4 +17,3 @@ The following is the Cocos Studio interface, the main interface consists of a to
 [Animation Panel](../animation/en.md)
 
 [Property Panel](../properties/en.md)
-

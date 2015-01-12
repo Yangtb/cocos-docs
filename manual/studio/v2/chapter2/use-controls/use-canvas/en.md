@@ -55,7 +55,7 @@ We have added the nodes, they will now set its position
 
 2. multiple nodes editing
 
-    There are two ways to select mutiple node: 
+    There are two ways to select multiple node: 
 
     (1) Press cmd (Windows press Ctrl) while clicking multiple nodes, 
 

@@ -31,7 +31,7 @@ Allow people to share a link, a structured [Open Graph](https://developers.faceb
 
 On iOS or Android, if the person has installed the native Facebook for iOS app or the native Facebook for Android app in the device, this method does an app switch to the native Facebook for iOS app or the native Facebook for Android app installed in the device, from which the person shares the content. Then it returns to your app once people have shared. Please note that your app does not have to be using Facebook Login for people to be able to share via the Share Dialog. Otherwise, if the person does not have the native Facebook for iOS app or the native Facebook for Android app installed in the device, the method automatically falls back to the Feed Dialog (a web dialog that doesn't need the native Facebook for iOS app or the native Facebook for Android app installed). Please visit [Sharing in iOS](http://developers.facebook.com/docs/ios/share) and [Sharing in Android](http://developers.facebook.com/docs/android/share) for more details.
 
-On Web, it triggers a Share Dialog through Javascript. Please note that you can only share a link or a structured Open Graph story with Share Dialog on web. Please visit [Share Dialog](https://developers.facebook.com/docs/sharing/reference/share-dialog) for more details.
+On Web, it triggers a Share Dialog through JavaScript. Please note that you can only share a link or a structured Open Graph story with Share Dialog on web. Please visit [Share Dialog](https://developers.facebook.com/docs/sharing/reference/share-dialog) for more details.
 
 
 ###Share Dialog types:
@@ -232,7 +232,7 @@ If messaging succeeds, `code` is `plugin.FacebookAgent.CODE_SUCCEED`. If the mes
 
 ```javascript
 {
-    "error_message": "Action canceled by user"
+    "error_message": "Action cancelled by user"
 }
 ```
 
@@ -334,7 +334,7 @@ If the sharing fails, `code` is error code and `response` is a JSON containing e
 
 ```javascript
 {
-    "error_message": "Action canceled by user"
+    "error_message": "Action cancelled by user"
 }
 ```
 

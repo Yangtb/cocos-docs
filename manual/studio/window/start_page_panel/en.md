@@ -9,7 +9,7 @@ Starting page is a commonly used function interface, in order to quickly enter t
 ## Functions
 ### Start
 
-Provide the shortcut menu, including creat new project, open the project function
+Provide the shortcut menu, including create new project, open the project function
 
 - Creates Project.
 Creates a new project.

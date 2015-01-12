@@ -15,7 +15,7 @@ Therefore, we added the `bake` function to `cc.Layer` to solve this problem. If 
 
 It's very simple to use bake function: create an `cc.Layer` object, add child node to this object, and then call `bake` function. 
 
-Example codes：
+Example code：
 
 	var bakeLayer = cc.Layer.create();
     this.addChild(bakeLayer);
@@ -33,7 +33,7 @@ Example codes：
     
     bakeLayer.bake();				// Enable bake feature for this layer
 
-For more details，please take a look at `js-tests/src/BakeLayerTest/BakeLayerTest.js`.
+For more detail, please take a look at `js-tests/src/BakeLayerTest/BakeLayerTest.js`.
 
 ### Note ###
 

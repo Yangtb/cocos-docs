@@ -1,6 +1,6 @@
 #How to write your own plugin for android
 
-Now we have four protocals in plugin-x: ProtocolAds, ProtocolAnalytics, ProtocolIAP, ProtocolSocial. You don't write any c++/jni code or javascript binding code. We have done it for you in the core code. What you need to do is:
+Now we have four protocols in plugin-x: ProtocolAds, ProtocolAnalytics, ProtocolIAP, ProtocolSocial. You don't write any c++/jni code or JavaScript binding code. We have done it for you in the core code. What you need to do is:
 
 - New a android project.
 - Write Java to implement the interface/protocol we defined.

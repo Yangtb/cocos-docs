@@ -31,7 +31,7 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
 * Sprites and Sprite Sheets
 * Effects: Lens, Ripple, Waves, Liquid, etc.
 * Actions (behaviours):
-    * Trasformation Actions: Move, Rotate, Scale, Fade, Tint, etc.
+    * Transformation Actions: Move, Rotate, Scale, Fade, Tint, etc.
     * Composable actions: Sequence, Spawn, Repeat, Reverse
     * Ease Actions: Exp, Sin, Cubic, Elastic, etc.
     * Misc actions: CallFunc, OrbitCamera, Follow, Tween
@@ -60,9 +60,9 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
    
 ## Documents
 
-- [Highlighted release note of Cocos2d-JS v3.1](./release-notes/v3.1/release-note/en.md)
-- [Changelog of Cocos2d-JS v3.1](./release-notes/v3.1/changelog/en.md)
-- [Upgrade guide to Cocos2d-JS v3.1](./release-notes/v3.0rc0/upgrade-guide/en.md)
+- [Highlighted release note of Cocos2d-JS v3.2](./release-notes/v3.2/release-note/en.md)
+- [Changelog of Cocos2d-JS v3.2](./release-notes/v3.2/changelog/en.md)
+- [Upgrade guide to Cocos2d-JS v3.2](./release-notes/v3.2rc0/upgrade-guide/en.md)
 - Startup
     - [Lite Version workflow](./v3/lite-version/en.md)
     - [Why use Cocos2d-html5 for Game Development](./v2/cocosh5-advantages/en.md)
@@ -83,8 +83,8 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
     - [Reflection from Javascript to Objective-C](./v3/reflection-oc/en.md)
     - [Cocos2d-html5 modulization](./v3/moduleconfig-json/en.md)
     - [Pure configuration file](./v3/project-json/en.md)
-    - [Basic data refactoration](./v3/basic-data/en.md)
-    - [Singleton objects refactoration](./v3/singleton-objs/en.md)
+    - [Basic data refactorization](./v3/basic-data/en.md)
+    - [Singleton objects refactorization](./v3/singleton-objs/en.md)
     - [Loading resource with cc.loader](./v3/cc-loader/en.md)
     - [System information in cc.sys](./v3/cc-sys/en.md)
     - [Path management with cc.path](./v3/cc-path/en.md)
@@ -93,7 +93,7 @@ Furthermore, JavaScript friendly APIs make your game development experience a br
     - [Modification to cc.spriteFrameCache](./v3/cc-spriteframecache/en.md)
     - [About cc.FileUtils](./v3/cc-fileutils/en.md)
     - [About cc.log](./v3/cc-log/en.md)
-    - [Other change from v2.2.2 to v3.0](./v3/more-change-from-v2-to-v3/en.md)
+    - [Other change from v2.2.2 to v3.x](./v3/more-change-from-v2-to-v3/en.md)
     
 - Facebook support for Cocos2d-JS
     - [Cocos2d-x with Facebook](./facebook-sdk/en.md)

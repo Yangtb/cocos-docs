@@ -146,7 +146,7 @@ Run the program and you give get the following result:
 
 To use the LabelBMFont class, you need to add the font files into your project, including a PNG file and a FNT file. The Label class has the same requirement.
 
-FNT file contains the name of the corresponding image, the corresponding unicode  of characters, the coordinates, width and height of characters in the image.
+FNT file contains the name of the corresponding image, the corresponding Unicode  of characters, the coordinates, width and height of characters in the image.
 
 You can change some attributes of your label4 by calling the member function just like following codes:
 
@@ -156,11 +156,11 @@ You can change some attributes of your label4 by calling the member function jus
 	auto lineWidth = label4->getMaxLineWidth();
 	CCLOG("lineWidth: %.2f", lineWidth);
 	auto s = label4->getStringLenght();
-	CCLOG("string lenght:%.2f", s);
+	CCLOG("string length:%.2f", s);
 	label4->setScale(2.0f);							//Changes both X and Y scale factor of the label4
 	label4->setColor(Color3B::GREEN);				//Changes the color
 	label4->setOpacity(127);						//Changes the opacity. 
-	auto CChar = (Sprite*)label4->getLetter(0);		//get the frist letter of label, each letter of the label can be treated like an CCSprite.
+	auto CChar = (Sprite*)label4->getLetter(0);		//get the first letter of label, each letter of the label can be treated like an CCSprite.
 	auto jump = JumpBy::create(0.5f, Point::ZERO, 60, 1);
 	auto jump_4ever = RepeatForever::create(jump);
 	CChar->runAction(jump_4ever);

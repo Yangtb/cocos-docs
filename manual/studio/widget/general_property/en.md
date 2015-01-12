@@ -4,7 +4,7 @@
 
 ### Transparency
 
-Sets the opacity of the background color，ranging from 0-255, 0 for transparent, 255 for the opaque option.
+Sets the opacity of the background color, ranging from 0-255, 0 for transparent, 255 for the opaque option.
 
 ### Color blend
 
@@ -41,8 +41,8 @@ Setting widget animation's frame event, frame events into effective for animatio
 
 ### Mode 
   
-Set the size of the widget.Include "Custom" mode and "Auto" mode.The default is "auto"，in this mode the widget's size is the picture's size. If selected "Custom"  mode，the widget size can be reset.  
-Only for effective widget,not include layout 、scrollview、listview、pageview。 
+Set the size of the widget.Include "Custom" mode and "Auto" mode.The default is "auto", in this mode the widget's size is the picture's size. If selected "Custom" mode, the widget size can be reset.  
+Only for effective widget, not include layout, scrollview, listview, pageview. 
 
 ### Size
 
@@ -129,16 +129,16 @@ Including: absolute layout mode, relative layout mode, horizontal linear pattern
 	Sets the current selected widget's dock. The default is parent widget. You can choose the parent and all the peer widgets which no layout relationship with current selected widget.
 
 	1. Dock is parent
-	 - Horizontal Alignment： Sets the widget horizontal alignment mode relative to parent.Including“left”、“middle” and “right” three modes.
-	 - Vertical Alignment：Sets the widget horizontal alignment mode relative to parent.Including “top”、“middow” and “bottom” three modes.
+	 - Horizontal Alignment： Sets the widget horizontal alignment mode relative to parent. Including“left”, “middle” and “right” three modes.
+	 - Vertical Alignment：Sets the widget horizontal alignment mode relative to parent. Including “top”, “middle” and “bottom” three modes.
 	2. Dock is peer
-	 - Dock Ddge ：Sets the dock direction relative to the dock，the current selected widget will cling to one side of dock object.
-	 - Horizontal Alignment：Sets the widget horizontal alignment mode relative to parent.Including“left”、“middle” and “right” three modes.( This attribute will be show only when the dock edge seleted "top"or“bottom".)
-	 - Vertical Alignment：Sets the widget horizontal alignment mode relative to parent.Including “top”、“middow” and “bottom” three modes.( This attribute will be show only when the dock edge seleted "top"or“bottom".)
+	 - Dock Ddge ：Sets the dock direction relative to the dock, the current selected widget will cling to one side of dock object.
+	 - Horizontal Alignment：Sets the widget horizontal alignment mode relative to parent. Including“left”, “middle” and “right” three modes.( This attribute will be show only when the dock edge selected "top" or "bottom".)
+	 - Vertical Alignment：Sets the widget horizontal alignment mode relative to parent. Including “top”, “middle” and “bottom” three modes.( This attribute will be show only when the dock edge selected "top" or "bottom".)
 
 - Edge
 
-	Set against the dock position displacement control.The unit is pixels. 
+	Set against the dock position displacement control. The unit is pixels. 
 	According to the dock  relationship between different, edge is only two attributes are available.
 	
 - flip
@@ -163,7 +163,7 @@ Including: absolute layout mode, relative layout mode, horizontal linear pattern
 -------
 - Vertical Alignment
 
-	Sets the widget horizontal alignment mode relative to parent.Including “top”、“middow” and “bottom” three modes.
+	Sets the widget horizontal alignment mode relative to parent.Including “top”、“middle” and “bottom” three modes.
 
 - Edge
 

@@ -7,7 +7,7 @@
 - **Add distribution provisioning profile**
 - **Use Code IDE to compile and pack a distribution ipa**
 
-###Note: The application process of a distribution certificate is very similiar to that of a developer certificate; so all you need is to regenerate the distribution certificate and provisioning profile
+###Note: The application process of a distribution certificate is very similar to that of a developer certificate; so all you need is to regenerate the distribution certificate and provisioning profile
 
 
 
@@ -92,7 +92,7 @@
 #####All available Distribution Certificates would be listed and select the one we created just now
 ![image](res/profile4.png)
 
-#####Fill in the configrution name and click "Generate"
+#####Fill in the configuration name and click "Generate"
 ![image](res/profile5.png)
 
 #####Wait for seconds and you'll be notified that the distribution provisioning profile is created.
@@ -114,19 +114,19 @@
 
 ## 7. Use the Package to IPA for iOS to compile and pack an IPA that can be used for real device debugging
 
-#####In Code IDE, right click the ipa project that you want to pack and publish, choose the Pakcage to IPA for iOS option under "Cocos Tools" menu.
+#####In Code IDE, right click the ipa project that you want to pack and publish, choose the Package to IPA for iOS option under "Cocos Tools" menu.
 ![image](res/publish1.png)
 
 #####If the current project has never added an additional source yet, you will be prompted to add one, click Yes to do so (if the project has one already, skip this step)
 ![image](res/publish2.png)
 
-#####In the pop-up “additional native source wizard” page， make sure that the iOS Bundle Identifier at the bottom matches the App ID we created; click Generate to generate source and be patient till it is done.
+#####In the pop-up “additional native source wizard” page, make sure that the iOS Bundle Identifier at the bottom matches the App ID we created; click Generate to generate source and be patient till it is done.
 ![image](res/publish3.png)
 
 #####Native code added successfully. Click close.
 ![image](res/publish4.png)
 
-#####It will switch to our “Pakcage to IPA for iOS generated wizard page；” make sure the certificate and packaged Target is correct, then click Generate to start generating a publishable ipa.
+#####It will switch to our “Package to IPA for iOS generated wizard page:” make sure the certificate and packaged Target is correct, then click Generate to start generating a publishable ipa.
 ![image](res/publish5.png)
 
 #####The ipa generating process would take 5-15 minutes, depending on the machine; please be patient.

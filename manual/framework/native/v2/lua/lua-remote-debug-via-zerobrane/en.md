@@ -16,7 +16,7 @@ ZeroBrane Studio is a lightweight Lua IDE.Because it can run on `Windows`,`Mac O
 
 1. Copy `ZeroBrane Studio.app/Contents/ZeroBraneStudio/lualibs/mobdebug/mobdebug.lua` into `cocos2d-x/samples/Lua/HelloLua/Resources` folder. If you are using cocos2d-x v3.0 beta2 or higher version, this step has been done by engine.
 
-2. Open `cocos2d-x/build/cocos2d_samples.xcodeproj` via Xcode, add `mobdebug.lua` into HelloLua target manually, then add debugger code into `HelloLua/Resources/hello.lua`. Only one line of code need to be insert: ``require('mobdebug').start()`. Insert this line of code in front of `require "hello2"`.
+2. Open `cocos2d-x/build/cocos2d_samples.xcodeproj` via Xcode, add `mobdebug.lua` into HelloLua target manually, then add debugger code into `HelloLua/Resources/hello.lua`. Only one line of code need to be insert: `require('mobdebug').start()`. Insert this line of code in front of `require "hello2"`.
 
 ```lua
 local function main()
@@ -44,7 +44,7 @@ end
 
 ![enterBreakPoint.png](res/enterBreakPoint.png)
 
-7. You can run step in, step out, step over etc. from debug toolbar easily. But pay attention that, a line such as `local visibleSize = cc.Director:getInstance():getVisibleSize()` need to be stepped over 3 times to goto the next line. It seems that because we have 2 funcion calls in this line.
+7. You can run step in, step out, step over etc. from debug toolbar easily. But pay attention that, a line such as `local visibleSize = cc.Director:getInstance():getVisibleSize()` need to be stepped over 3 times to goto the next line. It seems that because we have 2 function calls in this line.
 
 ![debugBar.png](res/debugBar.png)
 
@@ -54,7 +54,7 @@ end
 
 ![watchValue.png](res/watchValue.png)
 
-9. Click `View->Stack Window`, you can see stacks info here
+9. Click `View->Stack Window`, you can see stacks info here
 
 ![stackInfo.png](res/stackInfo.png)
 
@@ -78,6 +78,6 @@ local function main()
 end
 ```
 
-Note that `192.168.1.110` is your mac's IP addess. You need to connect this android device to the same IP segment, otherwise the debugger won't work properly. 
+Note that `192.168.1.110` is your mac's IP address. You need to connect this android device to the same IP segment, otherwise the debugger won't work properly. 
 
 

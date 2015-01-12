@@ -1,13 +1,13 @@
-# use webbroswer to integrate Alipay on Windows Phone 8
+# use web browser to integrate Alipay on Windows Phone 8
 
 ## Brief
 
-Since there is not apipay SDK on wp8, we can use WAP and Server to pay. In this situlation, we just need to add Windows Phone Page that contains WebBrowser control, you have to implement the Server that response to the web.
+Since there is not apipay SDK on wp8, we can use WAP and Server to pay. In this situation, we just need to add Windows Phone Page that contains WebBrowser control, you have to implement the Server that response to the web.
 I will show you a example of how to respond CCMenuItem click event to add a C# class, that is a way of using WinRT component to invoke C# library. The example code all in the github branch: [https://github.com/koowolf/cocos2d-x/tree/webbroswer](https://github.com/koowolf/Cocos2d-x "koowolf/cocos2d-x")。
 
 ## create Windows Phone XAML and Direct3D App project
 
- the Cocos2d-x contains XAML project in the Github now, [https://github.com/cocos2d/cocos2d-x/tree/master/cocos2dx/platform/wp8-xaml](https://github.com/cocos2d/cocos2d-x/tree/master/cocos2dx/platform/wp8-xaml), pull the codes and open cocos2d-wp8.vc2012.sln, you will see the structure as following：
+ the Cocos2d-x contains XAML project in the Github now, [https://github.com/cocos2d/cocos2d-x/tree/master/cocos2dx/platform/wp8-xaml](https://github.com/cocos2d/cocos2d-x/tree/master/cocos2dx/platform/wp8-xaml), pull the codes and open cocos2d-wp8.vc2012.sln, you will see the structure as following:
 
 ![application](res/1.png)
 
@@ -15,7 +15,7 @@ I will add example in this project.
 
 ## add a CCMenuItemFont in HelloWorld project ##
 
-add CCMenuItemFont in the HelloWorld::init() function，and add a response function HelloWorld::menuCallPageTest()，it will call HelloWorld::menuCallPageTest() while you click the menu.
+add CCMenuItemFont in the HelloWorld::init() function, and add a response function HelloWorld::menuCallPageTest()，it will call HelloWorld::menuCallPageTest() while you click the menu.
 
 ``` c++
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WP8)
@@ -48,7 +48,7 @@ it will call ShowWebBroswer() in menuCallPageTest( CCObject* sender )， it invo
 
 ## defind a C++ managed class BroswerEventHelper ##
 
-we can add a BroswerEventHelper in the Runtime Component project, we declare a function in HelloWorldScene.h, and implement its class memeber function in HelloWorldScene.cpp
+we can add a BroswerEventHelper in the Runtime Component project, we declare a function in HelloWorldScene.h, and implement its class member function in HelloWorldScene.cpp
 
 ``` c++
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WP8)
@@ -105,7 +105,7 @@ using namespace PhoneDirect3DXamlAppComponent;
 
 ## implement delegate function in C# code ##
 
-set delegate in DrawingSurface_Loaded() in MainPage.xaml.cs. add codes as following：
+set delegate in DrawingSurface_Loaded() in MainPage.xaml.cs. add codes as following:
 
 ``` c++
 BroswerEventHelper helper = new BroswerEventHelper();
@@ -113,7 +113,7 @@ helper.SetShowWebBroswerDelegate(ShowWebBroswer);
 
 ```
 
-ShowWebBroswer is a delegate function， implement in MainPage class as following：
+ShowWebBroswer is a delegate function, implement in MainPage class as following:
 
 ``` c++
         public void ShowWebBroswer()
@@ -127,7 +127,7 @@ ShowWebBroswer is a delegate function， implement in MainPage class as followin
 
 ```
 
-we use this.NavigationService.Navigate to jump to next page， we add a windows phone page next step。
+we use this.NavigationService.Navigate to jump to next page， we add a windows phone page next step.
 
 ## add WebBroswerPage.xaml page ##
 

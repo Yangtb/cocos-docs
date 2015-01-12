@@ -22,7 +22,7 @@ We are happy to announce the release of:
     * Added auto-culling for Sprites
     * Transforms are updated only when needed
 * New way to create games by using the `cocos` command line tool
-* Added setup.py to set up enrivonment varialbes
+* Added setup.py to set up environment variables
 * Label supports customization of shadows and outlines
 * Scheduler supports `std::function<>` as parameter
 * Added many useful commands for the `Console`

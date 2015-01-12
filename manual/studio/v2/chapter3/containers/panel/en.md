@@ -2,7 +2,7 @@
 
 ![](./res/image106.png)
 
-Panel can be used to control child elements’ layout, also has handy features like clipping, fill color or background image
+Panel can be used to control child element's layout, also has handy features like clipping, fill color or background image
  
 #### Usage
 In the official example, we make extensive use of the panel to manage the layout, such as the main menu, user name, diamonds and gold they all have Panel, in order to ensure a relatively uniform layout:

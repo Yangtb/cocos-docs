@@ -1,6 +1,6 @@
 # Cocos2d-JS Tutorials
 
-- Pakour Game with Cocos2d-JS v3.x
+- Parkour Game with Cocos2d-JS v3.x
     - [1. Setup Development Environment](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter1/en.md)
     - [2. Hello World Cocos2d-JS](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter2/en.md)
     - [3. Make your First Game Scene](../../../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter3/en.md)

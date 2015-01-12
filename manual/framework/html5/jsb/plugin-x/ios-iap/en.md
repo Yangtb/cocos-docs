@@ -11,11 +11,11 @@ PluginX IOS IAP Integration
 - Add **StoreKit.framework**  **libPluginProtocol.a**  and **libPluginIAP.a** into Target Build Phases
 - We can check **Capabilities** tab if the In-App Purchase is vaild,if the status is off, wo need to open it :
 <img src="res/check.png" width=500/>
-- Everything is ok,we can start coding now。
+- Everything is ok, we can start coding now.
  
 ##Start Coding
 
-- Firstly you should get the **PluginManager** instance and use **loadPlugin** to load the plugin you need,and then use **setListener** to setup callback function.about the callback function we will descript them later.
+- Firstly you should get the **PluginManager** instance and use **loadPlugin** to load the plugin you need,and then use **setListener** to setup callback function.about the callback function we will describe them later.
 
     ```
     var pluginManager = plugin.PluginManager.getInstance();
@@ -30,7 +30,7 @@ PluginX IOS IAP Integration
 	this.PluginIAP.callFuncWithParam("setServerMode");
     ```
 		
-- Thirdly you should put your product ids into an array and call **toString** function to change the array to string type before you call the **requestProducts** function, you will receive your products info by AppStore at callbacke function below.
+- Thirdly you should put your product ids into an array and call **toString** function to change the array to string type before you call the **requestProducts** function, you will receive your products info by AppStore at callback function below.
 
     ```
     var pidList = ["001", "002"];
@@ -64,7 +64,7 @@ PluginX IOS IAP Integration
     this.PluginIAP.payForProduct(this.product[0]);
     ```
 		
-- And then you should set the callback function named **onPayResult**,it's the callback for **payForProduct**，this function will receive data when users finish their payment.if you turn on the serverMode and the payment status is success(**plugin.ProtocolIAP.PayResultCode.PaySuccess**) you can receive the receipt at **msg** parameter.
+- And then you should set the callback function named **onPayResult**,it's the callback for **payForProduct**, this function will receive data when users finish their payment.if you turn on the serverMode and the payment status is success(**plugin.ProtocolIAP.PayResultCode.PaySuccess**) you can receive the receipt at **msg** parameter.
 
     ```
     onPayResult: function (ret, msg, productInfo) {
@@ -85,9 +85,9 @@ PluginX IOS IAP Integration
 
 - If you didn't turn on the serverMode, you now finish the payment. **finishTransaction** will be invoked automatic.
 
-- If you turn on the **serverMode** and you want to verify it by your own server ,you can add some info by a json type and then post it to your own server, so your server can receive the data and sent it to AppStore PaymentAddress or SandBox(for test)，if everything is ok ,you can receive response data from Apple.
+- If you turn on the **serverMode** and you want to verify it by your own server ,you can add some info by a json type and then post it to your own server, so your server can receive the data and sent it to AppStore PaymentAddress or SandBox(for test), if everything is ok, you can receive response data from Apple.
 
-- Check if the response data is vaild ,if yes you can add products to the user and send the message back to client.
+- Check if the response data is valid ,if yes you can add products to the user and send the message back to client.
 
 - At last if you turn on the **serverMode** you must call the **finishTransaction** function manually when the client receive your server response.
 

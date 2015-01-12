@@ -135,19 +135,19 @@ You can also use `EventListenerPhysicsContactWithBodies`, `EventListenerPhysicsC
 
 The contact relative bitmask setting and group setting are the same as Box2D. 
 
-There are three values: **CategoryBitmask**， **ContactTestBitmask** and **CollisionBitmask**. you can use corresponding get/set method to get/set them. They are tested by logical and operation. When **CategoryBitmask** of one body and with **ContactTestBitmask** of another body with the result doesn't equal to zero, the contact event will be sent, otherwise the contact event won't be sent. When **CategoryBitmask** of one body and with **CollisionBitmask** of another body with the result doesn't equal to zero, they will collied, overwise it won't. You should notice that by default, **CategoryBitmask** value is 0xFFFFFFFF, **ContactTestBitmask** value is 0x00000000, and **CollisionBitmask** value is 0xFFFFFFFF, which means all bodies will collide with each other but without sending contact event by default.
+There are three values: **CategoryBitmask**， **ContactTestBitmask** and **CollisionBitmask**. you can use corresponding get/set method to get/set them. They are tested by logical and operation. When **CategoryBitmask** of one body and with **ContactTestBitmask** of another body with the result doesn't equal to zero, the contact event will be sent, otherwise the contact event won't be sent. When **CategoryBitmask** of one body and with **CollisionBitmask** of another body with the result doesn't equal to zero, they will collied, otherwise it won't. You should notice that by default, **CategoryBitmask** value is 0xFFFFFFFF, **ContactTestBitmask** value is 0x00000000, and **CollisionBitmask** value is 0xFFFFFFFF, which means all bodies will collide with each other but without sending contact event by default.
 
 Another setting for physics contact is **group**, the objects in the same group will collide with each other when it's value larger than zero, and won't collide with each other when it's value is less than zero. Notice that when **group** doesn't equal to zero, it will ignore the collide bitmask setting (The contact test setting still works.).
 
 There are four contact callback functions in `EventListenerPhysicsContact`: `onContactBegin`, `onContactPreSolve`, `onContactPostSolve` and `onContactSeperate`.
 
-`onContactBegin` will be invoked at contact begin, and only invokeed once at this contact. You can decide if two shapes have collision or not by returning true or false. You can use `PhysicsContact::setData()` to set user data for coming contact operation. Notice that `onContactPreSolve` and `onContactPostSolve` will not be invoked when `onContactBegin` returns false, but however `onContactSeperate` will be invoked once.
+`onContactBegin` will be invoked at contact begin, and only invoked once at this contact. You can decide if two shapes have collision or not by returning true or false. You can use `PhysicsContact::setData()` to set user data for coming contact operation. Notice that `onContactPreSolve` and `onContactPostSolve` will not be invoked when `onContactBegin` returns false, but however `onContactSeperate` will be invoked once.
 
 `onContactPreSolve` will be invoked at each step, you can use `PhysicsContactPreSolve` setting functions to set contact parameters, like restitution, friction etc. You can also decide if two shapes have collision or not by returning true or false, and you can invoke `PhysicsContactPreSolve::ignore()` to skip subsequent `onContactPreSolve` and `onContactPostSolve` callbacks(returns true by default).
 
-`onContactPostSolve`will be invoked at two shapes collision response has been processed in each step. You can do some subsequent contact operations in it, destory a body for example.
+`onContactPostSolve`will be invoked at two shapes collision response has been processed in each step. You can do some subsequent contact operations in it, destroy a body for example.
 
-`onContactSeperate` will be invoked at two shapes seperated. It is also invoked once at this contact. It must be in pair with `onContactBegin`, so you can destory you own userdata here which you set with `PhysicsContact::setData()`.
+`onContactSeperate` will be invoked at two shapes separated. It is also invoked once at this contact. It must be in pair with `onContactBegin`, so you can destroy you own userdata here which you set with `PhysicsContact::setData()`.
 
 ## Demo
 

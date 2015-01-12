@@ -31,7 +31,7 @@ or just a simple string.
 
 `ref` is short for `reference`, which contains the references for this part.
 
-`res` is short for `resource`, whiche means the resources to be loaded for the part.
+`res` is short for `resource`, which means the resources to be loaded for the part.
 
 ##### Base config part of module
 The `resCfg["moduleName"]...` part is the base config of the module. e.g. a module named `m1`:

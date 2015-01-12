@@ -3,7 +3,7 @@
 - Since: v3.0 beta
 - Language: C++
 
-Defined in the head "[CCValue.h](https://github.com/andyque/cocos2d-x/blob/develop/cocos/base/CCValue.h)" loated in "COCOS2DX_ROOT/cocos/base"
+Defined in the head "[CCValue.h](https://github.com/andyque/cocos2d-x/blob/develop/cocos/base/CCValue.h)" located in "COCOS2DX_ROOT/cocos/base"
 
 ---
 

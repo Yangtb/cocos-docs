@@ -1,5 +1,5 @@
 #How to use CCache to speed up cocos2d-x android compilation
-CCache is a compiler cache for C/C++. It speeds up recompilation by caching the result of previous compilations and detecting when the same compilation is being done again. We can use this tool to speed up cocos2d-x android compilation. My cocos2d-x on android compilation is reduced from 10 minutes to 0.5 minutes by CCache on Macbook Pro Retina with i7 CPU.
+CCache is a compiler cache for C/C++. It speeds up recompilation by caching the result of previous compilations and detecting when the same compilation is being done again. We can use this tool to speed up cocos2d-x android compilation. My cocos2d-x on android compilation is reduced from 10 minutes to 0.5 minutes by CCache on Macbook Pro Retina with i7 CPU.
 
 The following instructions applied on Mac only.
 

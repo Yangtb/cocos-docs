@@ -1,6 +1,6 @@
-## Javascript Manual Binding
+## JavaScript Manual Binding
 
-Cocos2d-x allows you using javascript to call C++ classes, and vice versa. In this way, you can only care about the logical by using Javascript to complete game. So you can introduce your own API, which is written by C++ and can be called by JS. It's a good way to enlarge game library. If you tend to customize game library, you may love this.
+Cocos2d-x allows you using JavaScript to call C++ classes, and vice versa. In this way, you can only care about the logical by using JavaScript to complete game. So you can introduce your own API, which is written by C++ and can be called by JS. It's a good way to enlarge game library. If you tend to customize game library, you may love this.
 
 ### Create a JS project
 
@@ -205,7 +205,7 @@ Let's familiar with the procedures:
 
 1. The destructor of the JS class, which is also the destructor of the bound C++ class.
 2. It's the callback method of the JS class, which is named as **callback**. Remember **callback** is a method of JS class, which means you can use this method call C++ class's callback function. You can name it whatever you want.
-3. The constructor of the JS class, it does some initilizing works.
+3. The constructor of the JS class, it does some initializing works.
 4. This method is for binding C++ class's callback function-**logAndCallBck**.
 5. Create a JS class by this method. In this method, you have to define all the functions in C++ class. It's a important step. Don't miss the name of parameters. For instance, **logAndCallBack** is the name of C++ function, and **JSB_XObject_logAndCallBack** is the name of bound C++ function.
 6. In this method, you gave the C++ class a new name-**MyBinding**. So **MyBinding** can be treated as a JS class. And register the JS class.

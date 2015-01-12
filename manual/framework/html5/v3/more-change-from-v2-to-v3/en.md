@@ -2,7 +2,7 @@
 
 ## CCAudio.js
 
-`SimpleAudioEngine.js` is renamed as `CCAudio.js`。
+`SimpleAudioEngine.js` is renamed as `CCAudio.js`.
 
 Some APIs has been removed in `AudioEngine`:
 
@@ -29,7 +29,7 @@ cc.computeImageFormatType
 
 ## CCTGAlib.js
 
-Remove `cc.tgaLoad`。
+Remove `cc.tgaLoad`.
 
 ## cc.Texture2D
 

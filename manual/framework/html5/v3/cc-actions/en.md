@@ -18,7 +18,7 @@ The action can be created by following way.
 
 ### Refactor ease actions design ###
 
-The ease actions are actually decorative actions, they must be attached with target actions and cann't be used individually. All useful codes of the cc.ActionEase and its subclasses are in update functions, so they don't need to inhert from `cc.ActionInterval`, and could be wrapped into a object that provide an `easing` function to change the delta time.
+The ease actions are actually decorative actions, they must be attached with target actions and can't be used individually. All useful codes of the cc.ActionEase and its subclasses are in update functions, so they don't need to inherit from `cc.ActionInterval`, and could be wrapped into a object that provide an `easing` function to change the delta time.
 
 We added a function `easing` to `cc.ActionInterval`, it can be receive one ore more ease objects.
 

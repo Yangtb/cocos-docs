@@ -12,8 +12,8 @@ Below are the related APIs to the multi-resolution adaptation:
 	CCFileUtils::sharedFileUtils()->setSearchPaths() //set resource search path
 	CCEGLView::sharedOpenGLView()->getFrameSize() //get screen resolution
 	CCDirector::sharedDirector()->getWinSize() //get design resolution
-	CCDirector::sharedDirector()->getVisibleSize() //get design resolution’s visable area size
-	CCDirector::sharedDirector()->getVisibleOrigin() //get origin of the visable area of design resolution
+	CCDirector::sharedDirector()->getVisibleSize() //get design resolution’s visible area size
+	CCDirector::sharedDirector()->getVisibleOrigin() //get origin of the visible area of design resolution
 
 Since cocos2d-2.1beta3-x-2.1.1,
 
@@ -31,9 +31,9 @@ But this article focus on the Cocos2d-x multi-resolution technique from the pers
 
 ## Evolution from Retina to design resolution
 
-Before Cocos2d-x 2.0.4, Retina is a multi-resolution adaptation solution comes from Cocos2d-iPhone. To support Retina iPhone, Cocos2d-iPhone use suffix “-hd” to distinct normal iPhone resources and Retina iPhone resources. When desinging the game, we actually use point coordinate instead of pixel coordinate. This kind of point as same as the concept of the iOS native App, you don’t have to change your code and you can run your App on Retina iPhone that used run on normal iPhone. Only the picture are vague, but once import the picture with “@2x” extension iOS will load high definition resources automatically to support retina display.
+Before Cocos2d-x 2.0.4, Retina is a multi-resolution adaptation solution comes from Cocos2d-iPhone. To support Retina iPhone, Cocos2d-iPhone use suffix “-hd” to distinct normal iPhone resources and Retina iPhone resources. When designing the game, we actually use point coordinate instead of pixel coordinate. This kind of point as same as the concept of the iOS native App, you don’t have to change your code and you can run your App on Retina iPhone that used run on normal iPhone. Only the picture are vague, but once import the picture with “@2x” extension iOS will load high definition resources automatically to support retina display.
 
-Using point coordinate can solve multi-resolution in some degree. However, as iPhone5 and New iPad released there are five set of resources you need to prepare if you want to fit all kind of iOS devive and it’s very annoying. Point coordinate can not solve the problem and the situation is worse in Android platform.
+Using point coordinate can solve multi-resolution in some degree. However, as iPhone5 and New iPad released there are five set of resources you need to prepare if you want to fit all kind of iOS device and it’s very annoying. Point coordinate can not solve the problem and the situation is worse in Android platform.
 
 Design resolution is evolve from point coordinate, which aims block the screen resolution. Sprites will Locate on design resolution. But implement a solution not easy. Cocos2d-x provide a set of relative APIs and five multi-resolution policy. Which kind of policy is what we really need. Let’s explore it together!
 
@@ -95,7 +95,7 @@ Look this picture:
 ### kResolutionNoBorder
 > According to the width and height of screen and design resolution to determine the scale factor, choose the larger one as the scale factor. This can make sure that one axis can always fully display on screen, but another may scale out of the screen.
 
-kResolutionNoBorder is used to be the Official recommand policy, which not stretch the picture and keep one axis fully display on screen. But with two new policy introduced in Cocos2d-x 2.1.3, the position of kResolutionNoBorder will be replace.
+kResolutionNoBorder is used to be the Official recommended policy, which not stretch the picture and keep one axis fully display on screen. But with two new policy introduced in Cocos2d-x 2.1.3, the position of kResolutionNoBorder will be replace.
 
 Both kResolutionFixedHeight and kResolutionFixedWidth will correct the design resolution in the engine, to ensure that the design resolution won’t be stretch and full the screen.
 
@@ -129,11 +129,11 @@ Look at following picture:
 
 ![image](./res/5.png)
 
-For kResolutionNoBorder, design resolution is not same with visable area, when we locate a sprite we need the help of VisibleOrigin and VisibleSize.
+For kResolutionNoBorder, design resolution is not same with visible area, when we locate a sprite we need the help of VisibleOrigin and VisibleSize.
 
-However, kResolutionFixedHeight is different, design resolution is equal to visable area, VisibleOrigin is always (0,0). getVisibleSize() = getWinSize()，kResolutionFixedHeight reaches the same result, but simplify the code.
+However, kResolutionFixedHeight is different, design resolution is equal to visible area, VisibleOrigin is always (0,0). getVisibleSize() = getWinSize()，kResolutionFixedHeight reaches the same result, but simplify the code.
 
-kResolutionFixedHeight and kResolutionFixedWidth are evlove from kResolutionNoBorder, it’s highly recommand you use these two policy in your new project.
+kResolutionFixedHeight and kResolutionFixedWidth are evolved from kResolutionNoBorder, it’s highly recommended you use these two policy in your new project.
 
 ## Conclusions
 ### kResolutionFixedHeight

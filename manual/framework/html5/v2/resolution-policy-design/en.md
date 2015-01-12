@@ -151,7 +151,7 @@ In the case of our caption, the game width is larger than the game height, so th
 
 ## Customized resolution policy
 
-####1. Combien predefined strategies
+####1. Combine predefined strategies
 
 As you can see, the predefined policies just uses the combination of predefined strategies, you can do the same thing also. The predefined strategies are listed below:
 

@@ -88,7 +88,7 @@ Using squared images as background image, remember enable this function.
 
 UILayout has three modes to display color.
 
-| LayoutBackGroundColorType | Desription        |
+| LayoutBackGroundColorType | Description        |
 |---------------------------|-------------------|
 | LAYOUT_COLOR_NONE         | Transparent, no displaying color |
 | LAYOUT_COLOR_SOLID        | Solid, set displaying color |
@@ -116,7 +116,7 @@ UILayout is for layout, the works above are just changing background image. Foll
     
 ```
 
-Note: In addtion to absolute layout scheme, if you set other scheme then UIPanel will ignore the position setting of the inside widget. You can use `UILayoutParameter` to set position in this situation, the layout schemes provide serval parameters-`UILinearLayoutParameter` and `UIRelativeLayoutParameter`. Now show you how to combine these parameters and layout to design UI.
+Note: In addition to absolute layout scheme, if you set other scheme then UIPanel will ignore the position setting of the inside widget. You can use `UILayoutParameter` to set position in this situation, the layout schemes provide serval parameters-`UILinearLayoutParameter` and `UIRelativeLayoutParameter`. Now show you how to combine these parameters and layout to design UI.
 
 ``` c++
     layout->setLayoutType(LAYOUT_LINEAR_VERTICAL);
@@ -208,7 +208,7 @@ In addition to layout container, scroll view is always been used, it can enlarge
 
 As the image shows, we created a ScrollView widget and added some inner elements to it. The content is too much that out of the display area, in this situation we can drag the view up and down to show the content.
 
-**Note**: imageView's position is setted outside of scrollview, besides you can call the scrollview's setInnerContainerSize method resize the content displaying area. Checking boundary when draging.
+**Note**: imageView's position is setted outside of scrollview, besides you can call the scrollview's setInnerContainerSize method resize the content displaying area. Checking boundary when dragging.
 
 If horizontal drag is setted, then we just need to set InnerContainerSize's width larger than widget's, height equal to widget's. In this way you can drag it horizontally.
 
@@ -238,7 +238,7 @@ ListView inherited from ScrollView, so ScrollView's characters also can be shown
 
 ![uilistview_vertical](res/uilistview_vertical.png)
 
-As shown above, it's the implementation like ScrollView. There are twenty buttons can be draged, by setting every element's space with `ItemsMargin` and `Gravity` make them displaying in the center horizontally.
+As shown above, it's the implementation like ScrollView. There are twenty buttons can be dragged, by setting every element's space with `ItemsMargin` and `Gravity` make them displaying in the center horizontally.
 
 `lv->setItemModel(model)` setted Default Item for ListView, then added twenty times this Default Item by a for loop. Notice that it doesn't mean the same model has been added twenty times but there are twenty new object which are the clone of the original model.
 
@@ -311,4 +311,4 @@ As shown, a PageView object created and size is "Size(240, 130)", which is displ
 
 Although PageView implemented scroll, it is not inherited from ScrollView but UILayout. It implemented `UIScrollInterface`, this makes it such property. So does ScrollView.
 
-Every single widget make a GUI scene, the container is the skeleton, acorrding to its layout to reach out expectation. Using Panel, ScrollView, ListView and PageView can make a better and friendly GUI.
+Every single widget make a GUI scene, the container is the skeleton, according to its layout to reach out expectation. Using Panel, ScrollView, ListView and PageView can make a better and friendly GUI.

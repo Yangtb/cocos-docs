@@ -40,7 +40,7 @@ Then, you should add the path "[Cocos2d-x root]\tools\cocos2d-console\bin\" into
 
 ![](res/3.png)
  
-Open *cmd* and change current path to the bin path, and input the cmd "cocos -h", if it outputs the help message, congratuation, you have added the right path in the environment variables. We can create a project by using *cocos2d-console* commands now. 
+Open *cmd* and change current path to the bin path, and input the cmd "cocos -h", if it outputs the help message, congratulations, you have added the right path in the environment variables. We can create a project by using *cocos2d-console* commands now. 
 
 Type "cocos new -h", and you will get the following result :
 

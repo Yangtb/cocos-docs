@@ -1,11 +1,11 @@
 How to debug the framework cpp code
 =========================
 ---
-Before Cocos Code IDE 1.0.0-RC1, many users circumvented debuged the framework cpp code, because Cocos Code IDE supports Lua / JavaScipt only, and started and terminated runtime automatically. 
+Before Cocos Code IDE 1.0.0-RC1, many users circumvented debugged the framework cpp code, because Cocos Code IDE supports Lua / JavaScipt only, and started and terminated runtime automatically. 
 
-When you install Cocos Code IDE 1.0.0-RC1, you will notice **Remote Debug** radio group in **Debug Configurations** page that didn't exist before. Using this new feature, you can debug C++ with Lua / Javascript side-by-side simultaneously from Cocos Code IDE and XCode / Visual Studio.
+When you install Cocos Code IDE 1.0.0-RC1, you will notice **Remote Debug** radio group in **Debug Configurations** page that didn't exist before. Using this new feature, you can debug C++ with Lua / JavaScript side-by-side simultaneously from Cocos Code IDE and XCode / Visual Studio.
 
-Debug framework cpp is an advanced feature, I'am assuming you have mastered the basics. If not, please refer to [How to Debug Cocos2d-x Lua Game Using Code IDE][How to Debug Cocos2d-x Lua Game Using Code IDE] and [How to Debug Cocos2d-x JS Game Using Code IDE][How to Debug Cocos2d-x JS Game Using Code IDE]
+Debug framework cpp is an advanced feature, I'm assuming you have mastered the basics. If not, please refer to [How to Debug Cocos2d-x Lua Game Using Code IDE][How to Debug Cocos2d-x Lua Game Using Code IDE] and [How to Debug Cocos2d-x JS Game Using Code IDE][How to Debug Cocos2d-x JS Game Using Code IDE]
 
 ## Key Steps
 ---
@@ -30,7 +30,7 @@ This is a step-by-step guide for debugging Mac OSX lua runtime, other platforms 
 + Go back to Cocos Code IDE, open “Debug Configurations” page by clicking **Debug Configurations** button on toolbars
 + ![](lua_config_button.png)
 + Check **Remote Debug** radio button
-+ Select "Mac" platfrom
++ Select "Mac" platform
 + Enter "127.0.0.1" into the **Target IP** and select "127.0.0.1" on the **Host IP**
 + ![](lua_remote_mac_debug.png)
 + Then click the **Debug** button
@@ -46,10 +46,10 @@ The differences between Win32 and Mac OSX are:
 
 + Open project with Visual Studio by double clicking `frameworks/runtime-src/proj.win32/CocosLuaGame.sln`
 + Press `F5` to debug runtime directly
-+ Select "Win32" platfrom
++ Select "Win32" platform
 
 ## Debug Android runtime
-In principle, you can also debug java and cpp in ADT Bundle, but the process is more complex, any document sharing is welcomed!
+In principle, you can also debug Java and cpp in ADT Bundle, but the process is more complex, any document sharing is welcomed!
 
 The only difference in Cocos Code IDE is: Select "Android" platform
 

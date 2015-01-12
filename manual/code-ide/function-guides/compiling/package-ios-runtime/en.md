@@ -1,5 +1,5 @@
 
-#How to apply for a development certificate and use Code IDE to make an ipa that supports real mechine debug
+#How to apply for a development certificate and use Code IDE to make an ipa that supports real machine debug
 
 ## 1. Steps
 
@@ -9,7 +9,7 @@
 - **Add development provisioning profile**
 - **Use Code IDE to compile and package a development ipa**
 
-## 2. Instruction of iOS real mechine debug
+## 2. Instruction of iOS real machine debug
 
 #####1. Distribution Certificates: Apple authorized certification for developer
 #####2. UDID(Devices): The Device's uniquely identifies
@@ -21,7 +21,7 @@
 
 ## 3. Add Development Certificates
 
-#####First，we need to enter [Apple Developer Center](http://developer.apple.com)，click the MemberCenter and login(of course you'll need a iOS Developer account) into where shown in the picture
+#####First, we need to enter [Apple Developer Center](http://developer.apple.com), click the MemberCenter and login(of course you'll need a iOS Developer account) into where shown in the picture
 ![image](res/certificate1.png)
 
 #####Select the Certificates option
@@ -74,7 +74,7 @@
 
 ## 5. Add App ID
 
-#####We need to create an App ID for debugging purpose; by default we have an Xcode iOS Wildcard App ID that can be adapted as any application's Bundle Identifier, so that we can just use it for debugging；or you can create a new App ID of your own by clicking the plus icon at the upper right corner.
+#####We need to create an App ID for debugging purpose; by default we have an Xcode iOS Wildcard App ID that can be adapted as any application's Bundle Identifier, so that we can just use it for debugging; or you can create a new App ID of your own by clicking the plus icon at the upper right corner.
 ![image](res/appid1.png)
 
 #####Enter its name
@@ -139,7 +139,7 @@
 #####If the current project has never added an additional source yet, you will be prompted to add one, click Yes to do so (if the project has one already, skip this step)
 ![image](res/pakcage2.png)
 
-#####In the pop-up “additional native source wizard” page， make sure that the iOS Bundle Identifier at the bottom matches the App ID we created; click Generate to generate source and be patient till it is done.
+#####In the pop-up “additional native source wizard” page, make sure that the iOS Bundle Identifier at the bottom matches the App ID we created; click Generate to generate source and be patient till it is done.
 ![image](res/pakcage3.png)
 
 #####Native code added successfully. Click close.

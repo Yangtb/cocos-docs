@@ -34,7 +34,7 @@ window.onload = function(){
 };
 ```
 
-As you can see, `cc.game.onStart` and `cc.game.run` is wrapped in onload callback of window, so that we can garantee the engine's JavaScript file have been loaded and Cocos2d-JS APIs is available for your game code. In the following chapters, we will discuss another classic workflow which don't require to listener window's onload callback because the engine controls all file loading process.
+As you can see, `cc.game.onStart` and `cc.game.run` is wrapped in onload callback of window, so that we can guarantee the engine's JavaScript file have been loaded and Cocos2d-JS APIs is available for your game code. In the following chapters, we will discuss another classic workflow which don't require to listener window's onload callback because the engine controls all file loading process.
 
 Please also be noted that all files in the HelloWorld project should be put onto a local or online web server to work correctly.
 
@@ -54,13 +54,13 @@ You can use [Google Closure Compiler](https://developers.google.com/closure/comp
 1. Download Closure Compiler's jar app
 2. Configure the build.xml with your own configurations
 3. Run `ant` in the terminal
-4. Replace the embeded js files in HelloWorld.html with the single output file `game.min.js`
+4. Replace the embedded js files in HelloWorld.html with the single output file `game.min.js`
 
 Please be noticed that you can not write any js code in your html file, all js codes should be compressed at the same time, otherwise errors will be triggered.
 
 ## Notice
 
-While openning the HelloWorld.html, you will receive an error:
+While opening the HelloWorld.html, you will receive an error:
 "Failed to load resource: the server responded with a status of 404 (Not Found)" for the file `project.json`
 
-It's not a problem, you can simply igore it, or you can get rid of this error by creating an empty `project.json` file.
+It's not a problem, you can simply ignore it, or you can get rid of this error by creating an empty `project.json` file.

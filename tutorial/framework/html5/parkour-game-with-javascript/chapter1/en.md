@@ -19,9 +19,9 @@ In this documentation, I will omit the every details of each software package's 
 
 ##Download the required software packages
 
-1. Download and install WebStorm 7. The current stable release of [WebStorm 7](http://www.jetbrains.com/webstorm/download/index.html) is 7.02.  Why do we choose WebStorm? Because it provides many feature like javascript code syntax completion, debugging, syntax highlighting, version system integrated etc. You can go to WebStorm's official website for more information.
+1. Download and install WebStorm 7. The current stable release of [WebStorm 7](http://www.jetbrains.com/webstorm/download/index.html) is 7.02.  Why do we choose WebStorm? Because it provides many feature like JavaScript code syntax completion, debugging, syntax highlighting, version system integrated etc. You can go to WebStorm's official website for more information.
 
-2. Download Cocos2d-html5 v2.2 from the offical website of Cocos2d-x. Here is the [Link](http://cocos2d-x.org/download ) .After you downloaded the Cocos2d-html v2.2. You should unzip it to a proper location. In our case, I unzip it at ~/workspace/Cocos2d-html5.The ~ simbol represents your home directory path, which in our case is /Users/guanghui. 
+2. Download Cocos2d-html5 v2.2 from the official website of Cocos2d-x. Here is the [Link](http://cocos2d-x.org/download ) .After you downloaded the Cocos2d-html v2.2. You should unzip it to a proper location. In our case, I unzip it at ~/workspace/Cocos2d-html5.The ~ symbol represents your home directory path, which in our case is /Users/guanghui. 
 
 **Note:** 
 	
@@ -56,7 +56,7 @@ Now, Let's try Cocos2d-html5 within WebStorm.
 
 1. Create a project from Cocos2d-html5
 
-	As we can see from the above picture, you should choose **Create New Project from Exisiting Files** 
+	As we can see from the above picture, you should choose **Create New Project from Existing Files** 
 	
 	Then it will prompt you with the following options:
 	
@@ -82,13 +82,13 @@ Now, Let's try Cocos2d-html5 within WebStorm.
 
 ## Play with Cocos2d-html5
 
-Since you have added the entire Cocos2d-html5 directory to WebStorm 7. WebStorm will parse all the Cocos2d-html5 source code. If you open **HelloHTML5World/src/myApp.js**, you can obtain the ability of acurate syntax completion.
+Since you have added the entire Cocos2d-html5 directory to WebStorm 7. WebStorm will parse all the Cocos2d-html5 source code. If you open **HelloHTML5World/src/myApp.js**, you can obtain the ability of accurate syntax completion.
 
 **Figure 5**
 
 ![syntaxac](res/syntaxac.png)
 
-If you have a third party javascript library in your Cocos2d-html5 game apps, you can also add it to the WebStorm library for parsing and enable realtime syntax autocompletion.
+If you have a third party JavaScript library in your Cocos2d-html5 game apps, you can also add it to the WebStorm library for parsing and enable realtime syntax autocompletion.
 
 Here is the instructions:
 
@@ -106,13 +106,13 @@ Here is the instructions:
 	
 	![addjslib](res/addjslib.png)
 
-3. Now you should click **Add...** button and it will prompts you to specify the location of your javascript library. 
+3. Now you should click **Add...** button and it will prompts you to specify the location of your JavaScript library. 
 	
 	**Figure 8**
 	
 	![addjslibpath](res/addjslibpath.png)
 
-### Debug Cocos2d-html5 javascript code within WebStorm
+### Debug Cocos2d-html5 JavaScript code within WebStorm
 Now it's time for us to debugging Cocos2d-html5 code.
 
 #### Connect WebStorm to Chrome with JB chrome extensions
@@ -130,7 +130,7 @@ it will show you that it has been connected with WebStrom 7.02:
 
 **Note:** This is step is very straightforward, once you have installed the plugin--"JetBrains IDE support". When you click the debug menu in WebStorm, it will connect to chrome automatically. How convenience it is! You can also click the **JB** icon in the right side of Chrome's side bar and it will bring you to the WebStorm IDE immediately.
 
-#### Debug javascript code in WebStorm
+#### Debug JavaScript code in WebStorm
 Back to WebStorm and double click **HelloHTML5World/src/myApp.js** to view the source code.
 
 1. Set the break point. Right click the left sidebar of myApp.js source code viewport.

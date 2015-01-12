@@ -5,7 +5,7 @@ In Cocos2d-JS v3.0 RC2, we'd like to introduce you the js to Objective-C reflect
 
 	var ojb = jsb.reflection.callStaticMethod(className, methodNmae, arg1, arg2, .....);
 
-You can use `jsb.reflection.callStaticMethod` to call Native OC method by sending `className` `methodName` and `parmeters`.
+You can use `jsb.reflection.callStaticMethod` to call Native OC method by sending `className` `methodName` and `parameters`.
 
 ##Objective-C Class
 
@@ -26,7 +26,7 @@ You can use `jsb.reflection.callStaticMethod` to call Native OC method by sendin
 ```
 +(BOOL)callNativeUIWithTitle:(NSString *)title andContent:(NSString *)content;
 ```
-So the `methodName` should be `callNativeUIWithTitle:addContent:` which is the definition for this method, and don't forget the **:**. We cannot discuss the details here, but if you are interested, you can search for Objective-C programmation guide for more details.
+So the `methodName` should be `callNativeUIWithTitle:addContent:` which is the definition for this method, and don't forget the **:**. We cannot discuss the details here, but if you are interested, you can search for Objective-C programming guide for more details.
 
 - Another example below, the `methodName` should be `callNativeWithReturnString`.
  

@@ -100,7 +100,7 @@ content of this file is, please leave `target_namespace` blank, embed custom cla
 # templates
 prefix = cocos2dx_custom
 
-# create a target namespace (in javascript, this would create some code like the equiv. to `ns = ns || {}`)
+# create a target namespace (in JavaScript, this would create some code like the equiv. to `ns = ns || {}`)
 # all classes will be embedded in that namespace
 target_namespace =
 

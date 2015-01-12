@@ -46,7 +46,7 @@ The method signature is a little complex. The most simple signature is `()V`, it
 - `(I)I` represents a method which has a int parameter and a int return value.
 - `(IF)Z` represents a method which has a int parameter and a float parameter, and returns boolean.
 
-Now I think you have understood it. The symbols in brackets represent the type of parameters, and the symbol after bracket represent the type of return value. Because we are allowed to overload methods in Java, there can be multiple methods which hava the same method name, but different parameters and return value. The method signature is used to help identifing these methods.
+Now I think you have understood it. The symbols in brackets represent the type of parameters, and the symbol after bracket represent the type of return value. Because we are allowed to overload methods in Java, there can be multiple methods which hava the same method name, but different parameters and return value. The method signature is used to help identifying these methods.
 
 Right now cocos2d-js supports four Java types:
 
@@ -59,9 +59,9 @@ Right now cocos2d-js supports four Java types:
 
 ##parameters
 
-The number of parameters can be 0 or more than one. And when we use `callStaticMethod`, we can use number, boolean and string of Javascript directly.
+The number of parameters can be 0 or more than one. And when we use `callStaticMethod`, we can use number, boolean and string of JavaScript directly.
 
-##Useage
+##Usage
 
 We will call the static methods of `Test` class:
 
@@ -82,7 +82,7 @@ Now look at your console, there should be correct output.
 
 ##Attention
 
-A very important thing we must pay attention to is thread! In cocos android app, the engine and Javascript VM works in `gl` thread, and Android update its UI in `ui` thread. So if we call a Java method which will update app UI, it must run in `ui` thread.
+A very important thing we must pay attention to is thread! In cocos android app, the engine and JavaScript VM works in `gl` thread, and Android update its UI in `ui` thread. So if we call a Java method which will update app UI, it must run in `ui` thread.
 
 For example, we will call a Java method which shows an Android AlertDialog.
 
@@ -125,9 +125,9 @@ You should see a Android native AlertDialog now.
 
 ##What's more
 
-Now we have successfully cal Java methods in Javascript, so can we call js in Java? Of course!
+Now we have successfully called Java methods in JavaScript, so can we call js in Java? Of course!
 
-In your project add the `Cocos2dxJavascriptJavaBridge`, this class has a `evalString` method which can evaluate Javascript. It's in the folder `frameworks\js-bindings\bindings\manual\platform\android\java\src\org\cocos2dx\lib`.
+In your project add the `Cocos2dxJavascriptJavaBridge`, this class has a `evalString` method which can evaluate JavaScript. It's in the folder `frameworks\js-bindings\bindings\manual\platform\android\java\src\org\cocos2dx\lib`.
 
 We will add a OK button for the AlertDialog, and use `evalString` in its `OnClickListener`. Note that this time we should run js code in `gl` thread.
 
@@ -139,11 +139,11 @@ alertDialog.setButton("OK", new DialogInterface.OnClickListener() {
 		app.runOnGLThread(new Runnable() {
 			@Override
 			public void run() {
-				Cocos2dxJavascriptJavaBridge.evalString("cc.log(\"Javascript Java bridge!\")");
+				Cocos2dxJavascriptJavaBridge.evalString("cc.log(\"JavaScript Java bridge!\")");
 			}
 		});
 	}
 });
 ```
 
-After clicking OK button, you should see the output. `evalString` can run any js code, and can access your js variables。
+After clicking OK button, you should see the output. `evalString` can run any js code, and can access your js variables.

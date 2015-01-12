@@ -18,9 +18,9 @@
 
 ![](images/modify_info_plist.jpg)
 
-**Step4**: 打开`myProject`工程中的`myProject iOS`目标，打开`Build Settings`页面，然后搜索`Other Linker Flags`，并在其中添加`-ObjC`链接标志。
+**Step4**: 打开`myProject`工程中的`myProject iOS`目标，打开`Build Settings`页面，然后搜索`Other Linker Flags`，并在其中添加`-ObjC`链接标志(如果你编译出现错误，请加入`CoreVideo.framework` 和`GameController.framework`)。
 
-	![](images/linker_flag.jpg)
+![](images/linker_flag.jpg)
 
 **Step5**: 找到`ios/AppController.mm`，并在当中加入Facebook iOS SDK需要的代码：
 

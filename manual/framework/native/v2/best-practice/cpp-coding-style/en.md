@@ -134,7 +134,7 @@ _Forked from [Google's C++ coding style](http://google-styleguide.googlecode.com
 
 # Header Files
 
-In general, every `.cpp` file should have an associated `.h` file. There are some common exceptions, such as unittests and small `.cpp` files containing just a `main()` function.
+In general, every `.cpp` file should have an associated `.h` file. There are some common exceptions, such as unit tests and small `.cpp` files containing just a `main()` function.
 
 Correct use of header files can make a huge difference to the readability, size and performance of your code.
 
@@ -160,7 +160,7 @@ To guarantee uniqueness, they should be based on the full path in a project's so
 #pragma once
 ```
 
-We are cosidering using `#pragma once` as well, although we haven't determined yet if it is supported in all our target platforms.
+We are considering using `#pragma once` as well, although we haven't determined yet if it is supported in all our target platforms.
 
 ## Forward Declarations
 
@@ -177,7 +177,7 @@ You may forward declare ordinary classes in order to avoid unnecessary `#include
 
 * It can be difficult to determine the correct form of a forward declaration in the presence of features like templates, typedefs, default parameters, and using declarations.
 * It can be difficult to determine whether a forward declaration or a full #include is needed for a given piece of code, particularly when implicit conversion operations are involved. In extreme cases, replacing an #include with a forward declaration can silently change the meaning of code.
-* Forward declaring multiple symbols from a header can be more verbose than simply #includeing the header.
+* Forward declaring multiple symbols from a header can be more verbose than simply #include-ing the header.
 * Forward declarations of functions and templates can prevent the header owners from making otherwise-compatible changes to their APIs; for example, widening a parameter type, or adding a template parameter with a default value.
 * Forward declaring symbols from namespace std:: usually yields undefined behavior.
 * Structuring code to enable forward declarations (e.g. using pointer members instead of object members) can make the code slower and more complex.
@@ -629,7 +629,7 @@ We require all single argument constructors to be explicit. Always put explicit 
 
 The exception is copy constructors, which, in the rare cases when we allow them, should probably not be explicit. Classes that are intended to be transparent wrappers around other classes are also exceptions. Such exceptions should be clearly marked with comments.
 
-Finally, constructors that take only an initializer_list may be non-explicit. This is to permit construction of your type using the assigment form for brace init lists (i.e. `MyType m = {1, 2}` ).
+Finally, constructors that take only an initializer_list may be non-explicit. This is to permit construction of your type using the assignment form for brace init lists (i.e. `MyType m = {1, 2}` ).
 
 ## Copy Constructors
 
@@ -860,7 +860,7 @@ Within each section, the declarations generally should be in the following order
 * Constructors
 * Destructor
 * Methods, including static methods
-* overriden methods (must have the `override` keyword as suffix)
+* overridden methods (must have the `override` keyword as suffix)
 * Data Members (except `static const` data members)
 
 Friend declarations should always be in the private section, and the `DISALLOW_COPY_AND_ASSIGN` macro invocation should be at the end of the private: section. It should be the last thing in the class. See Copy Constructors.
@@ -967,7 +967,7 @@ Do not use `scoped_ptr` in new code unless you need to be compatible with older 
 
 ## Reference Arguments
 
-All parameters passed by reference must be labeled `const`.
+All parameters passed by reference must be labelled `const`.
 
 **Definition:**
 In C, if a function needs to modify a variable, the parameter must use a pointer, eg int foo(int *pval). In C++, the function can alternatively declare a reference parameter: int foo(int &val).
@@ -1081,7 +1081,7 @@ We do not allow variable-length arrays or alloca().
 
 We allow use of friend classes and functions, within reason.
 
-Friends should usually be defined in the same file so that the reader does not have to look in another file to find uses of the private members of a class. A common use of friend is to have a FooBuilder class be a friend of Foo so that it can construct the inner state of Foo correctly, without exposing this state to the world. In some cases it may be useful to make a unittest class a friend of the class it tests.
+Friends should usually be defined in the same file so that the reader does not have to look in another file to find uses of the private members of a class. A common use of friend is to have a FooBuilder class be a friend of Foo so that it can construct the inner state of Foo correctly, without exposing this state to the world. In some cases it may be useful to make a unit test class a friend of the class it tests.
 
 Friends extend, but do not break, the encapsulation boundary of a class. In some cases this is better than making a member public when you want to give only one other class access to it. However, most classes should interact with other classes solely through their public members.
 
@@ -1629,7 +1629,7 @@ C++11 features may be used unless specified otherwise. In addition to what's des
 * Compile-time rational numbers (`<ratio>`), because of concerns that it's tied to a more template-heavy interface style.
 * The `<cfenv>` and `<fenv.h>` headers, because many compilers do not support those features reliably.
 
-Additionaly, any C++11 features that is used, must work on the following compilers:
+Additionally, any C++11 features that is used, must work on the following compilers:
 
 * Xcode 5.0.2 or newer
 * gcc 4.8 or newer
@@ -1637,7 +1637,7 @@ Additionaly, any C++11 features that is used, must work on the following compile
 
 ## General Naming Rules
 
-Function names, variable names, and filenames should be descriptive; eschew abbreviation.
+Function names, variable names, and file names should be descriptive; eschew abbreviation.
 
 Give as descriptive a name as possible, within reason. Do not worry about saving horizontal space as it is far more important to make your code immediately understandable by a new reader. Do not use abbreviations that are ambiguous or unfamiliar to readers outside your project, and do not abbreviate by deleting letters within a word.
 
@@ -1660,7 +1660,7 @@ int cstmrId;               // Deletes internal letters.
 
 ## File Names
 
-Filenames should be all in CamelCasel, and for cocos2d specific files, they should start with the `CC` prefix as well.
+File names should be all in CamelCasel, and for cocos2d specific files, they should start with the `CC` prefix as well.
 
 Examples of acceptable file names:
 
@@ -1671,9 +1671,9 @@ Examples of acceptable file names:
 
 C++ files should end in `.cpp` and header files should end in `.h`.
 
-Do not use filenames that already exist in /usr/include, such as db.h.
+Do not use file names that already exist in /usr/include, such as db.h.
 
-In general, make your filenames very specific. For example, use `CCTexture2D.h` rather than `Texture.h`. A very common case is to have a pair of files called, e.g., `FooBar.h` and `FooBar.cpp` , defining a class called `FooBar` .
+In general, make your file names very specific. For example, use `CCTexture2D.h` rather than `Texture.h`. A very common case is to have a pair of files called, e.g., `FooBar.h` and `FooBar.cpp` , defining a class called `FooBar` .
 
 Inline functions must be in a `.h` file. If your inline functions are very short, they should go directly into your .h file. However, if your inline functions include a lot of code, they may go into a third file that ends in `-inl.h` . In a class with a lot of inline code, your class could have three files:
 
@@ -2190,7 +2190,7 @@ Exception: you needn't be concerned about header guards that exceed the maximum 
 
 Non-ASCII characters should be rare, and must use UTF-8 formatting.
 
-You shouldn't hard-code user-facing text in source, even English, so use of non-ASCII characters should be rare. However, in certain cases it is appropriate to include such words in your code. For example, if your code parses data files from foreign sources, it may be appropriate to hard-code the non-ASCII string(s) used in those data files as delimiters. More commonly, unittest code (which does not need to be localized) might contain non-ASCII strings. In such cases, you should use UTF-8, since that is an encoding understood by most tools able to handle more than just ASCII.
+You shouldn't hard-code user-facing text in source, even English, so use of non-ASCII characters should be rare. However, in certain cases it is appropriate to include such words in your code. For example, if your code parses data files from foreign sources, it may be appropriate to hard-code the non-ASCII string(s) used in those data files as delimiters. More commonly, unit test code (which does not need to be localized) might contain non-ASCII strings. In such cases, you should use UTF-8, since that is an encoding understood by most tools able to handle more than just ASCII.
 
 Hex encoding is also OK, and encouraged where it enhances readability — for example, `"\xEF\xBB\xBF"`, or, even more simply, `u8"\uFEFF"`, is the Unicode zero-width no-break space character, which would be invisible if included in the source as straight UTF-8.
 
@@ -2296,7 +2296,7 @@ Function calls have the following format:
 bool retval = doSomething(argument1, argument2, argument3);
 ```
 
-If the arguments do not all fit on one line, they should be broken up onto multiple lines, with each subsequent line aligned with the first argument. Do not add spaces after the open paren or before the close paren:
+If the arguments do not all fit on one line, they should be broken up onto multiple lines, with each subsequent line aligned with the first argument. Do not add spaces after the open parentheses or before the close parentheses:
 
 ```cpp
 bool retval = doSomething(averyveryveryverylongargument1,

@@ -16,7 +16,7 @@ Examples:
 
 *Note:* v2.1 class names are still available, but they were tagged as deprecated.
 
-####Changes in free funcitons
+####Changes in free functions
 for the drawing primitives:
 
 - They were added in the *DrawPrimitives* namespace
@@ -116,7 +116,7 @@ A subset of C++11 features are being used in Cocos2d-x:
 - *std::function*, including lambda objects for callbacks
 - strongly typed enums, for most of the Cocos2d-x enums and constants
 - *std::thread* for threading
-- *override* context keyword, for overriden methods
+- *override* context keyword, for overridden methods
 
 ###Std::function
 

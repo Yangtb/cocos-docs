@@ -2,11 +2,11 @@
 
 Object creation in Cocos2d-JS have always been the same way as in Cocos2d-x, that is using `create` functions of each class. In Cocos2d-JS v3.0 we'd like to introduce you the classic way to create an object: `new` operator. Moreover, in v3.0 alpha1, if you use JSB you will not be able to inherite many engine classes because we haven't found a perfect solution. But this have been solved in v3.0 alpha2. Thanks to the `new` operator support, the inheritance code is much more easier too.
 
-In this document, we will introduce not only how to use them, but also some implementation explaination in brief.
+In this document, we will introduce not only how to use them, but also some implementation explanation in brief.
 
 ##1. Deprecated create functions##
 
-As we supported an easier way to create objects, all `create` and `createWithXXX` functions have been deprecated. `new` construction supports all parameter combinasions for old `create` functions.
+As we supported an easier way to create objects, all `create` and `createWithXXX` functions have been deprecated. `new` construction supports all parameter combinations for old `create` functions.
 
 ##2. Constructor##
 
@@ -39,7 +39,7 @@ In Cocos2d-html5 2.x, we need to use different init functions in `create` functi
 	var MySprite = cc.Sprite.extend({
 		ctor:function(){
 			this._super();
-			// Custom intialization
+			// Custom initialization
 		}
 		// add your properties and functions
 	});
@@ -58,7 +58,7 @@ In Cocos2d-JS, we only need to override ctor function with correct arguments, an
 	var MySprite = cc.Sprite.extend({
 		ctor:function(filename,rect){
 			this._super(filename,rect);
-			// Custom intialization
+			// Custom initialization
 		}
 		// add your properties and functions
 	});
@@ -68,7 +68,7 @@ In Cocos2d-JS, we only need to override ctor function with correct arguments, an
 
 It's very easy to understand this for html5 engine, because we supported `new` operator.
 
-But in JSB it's a little bit tricky, the `_super` funciton we will call Sprite's ctor function in C++ level: `js_cocos2dx_Sprite_ctor`, and this function not only instantiate the Sprite object, but also invoked `cc.Sprite.prototype._ctor` and pass all parameters. This `_ctor` function is a js level wrapper for the real initialization of the Sprite object according to the parameters passed, and finally user's custom ctor process will be done.
+But in JSB it's a little bit tricky, the `_super` function we will call Sprite's ctor function in C++ level: `js_cocos2dx_Sprite_ctor`, and this function not only instantiate the Sprite object, but also invoked `cc.Sprite.prototype._ctor` and pass all parameters. This `_ctor` function is a js level wrapper for the real initialization of the Sprite object according to the parameters passed, and finally user's custom ctor process will be done.
 
 The sequence dialog of the process is showing below:
 

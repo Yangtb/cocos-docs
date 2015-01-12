@@ -23,7 +23,7 @@ Hold the left mouse button and move, rendering area will follow the mouse to dra
 
 ![](./res/drag_points.png)
 
-* At the corners or the 1,2,4, or 5 points of reference as labeled above, you can use your mouse to adjust the size of the widget. You can also scale the widget by simultaneously pressing the Shift key and clicking on the widget to modify the widget to be uniform to scale.
+* At the corners or the 1,2,4, or 5 points of reference as labelled above, you can use your mouse to adjust the size of the widget. You can also scale the widget by simultaneously pressing the Shift key and clicking on the widget to modify the widget to be uniform to scale.
 * By selecting the point of reference as shown in the graphic as point 3, you can rotate the widget.
 * Note that point 6 is an anchor point.
 

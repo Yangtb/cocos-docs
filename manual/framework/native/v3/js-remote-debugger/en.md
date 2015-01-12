@@ -1,14 +1,14 @@
-Javascript Remote Debugging by Firefox
+JavaScript Remote Debugging by Firefox
 ======================================
 
-Cocos2d-x JSB is a good way for build a 2d game. It's easier and cost less time than C++ to develop a game. However, before Version 3.0aplha1 you can not debug JSB project as C++. It's annoying that we can do nothing when issues appared. Now we introduced a solution that allows you debugging JSB project just like C++, it's convinent and efficient.
+Cocos2d-x JSB is a good way for build a 2d game. It's easier and cost less time than C++ to develop a game. However, before Version 3.0aplha1 you can not debug JSB project as C++. It's annoying that we can do nothing when issues appeared. Now we introduced a solution that allows you debugging JSB project just like C++, it's convenient and efficient.
 
 ### Requirement
 
 * Cocos2d-x Version 3.0 alpha1
 * Firefox   Version 24 and above
 
-**Debugging Enviroment** (This debug solution is also applicable to other enviroments)
+**Debugging Environment** (This debug solution is also applicable to other environments)
 
 * Mac OS X 10.9
 * Xcode 5.02

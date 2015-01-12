@@ -19,7 +19,7 @@ When you have a class whose instance requires frequent creation and deletion, th
 		_sp: 0,
 		_mp: 0,
 		ctor: function (f1, f2, f3) {
-    		this._super(s_grossini);
+    		this._super(f1, f2, f3);
     		this.initData(f1, f2, f3);
 		},
 		initData: function (f1, f2, f3) {

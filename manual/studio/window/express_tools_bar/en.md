@@ -19,9 +19,9 @@ Closes the scene simulator.
 
 Rotates the selected widget 90 degrees clockwise.
 
-### Rotate 90 degrees counterclockwise
+### Rotate 90 degrees counter-clockwise
 
-Rotates the selected widget 90 degrees counterclockwise.
+Rotates the selected widget 90 degrees counter-clockwise.
 
 ### Center Alignment
 

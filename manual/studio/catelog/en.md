@@ -14,7 +14,7 @@
    - [Resources](../../manual/studio/window/resource_panel/en.md)
    - [Menu Bar](../../manual/studio/window/menu_bar/en.md)
 - Widget
-   - [Buttton](../../manual/studio/widget/button/en.md)
+   - [Button](../../manual/studio/widget/button/en.md)
    - [CheckBox](../../manual/studio/widget/checkbox/en.md)
    - [Sprite](../../manual/studio/widget/sprite/en.md)
    - [Image View](../../manual/studio/widget/imageview/en.md)

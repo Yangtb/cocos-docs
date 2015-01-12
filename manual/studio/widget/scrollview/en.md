@@ -63,5 +63,5 @@ Sets the height of the scroll area.
 
 ### Transparency
 
-Sets the opacity of the background color，ranging from 0-255, 0 for transparent, and 255 for the opaque option.
+Sets the opacity of the background color, ranging from 0-255, 0 for transparent, and 255 for the opaque option.
 

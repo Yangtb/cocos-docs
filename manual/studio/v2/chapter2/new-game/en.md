@@ -37,7 +37,7 @@ Project language: C ++, Lua, JavaScript
 
 Operating environment: you can choose when to use Cocos2d-x or run a program run through the source code compiler.
 
-Addtional Features: Additional features for C ++ special optimization features provided by Intel.
+Additional Features: Additional features for C ++ special optimization features provided by Intel.
 
 Intel Common Connectivity Framework is a framework for universal connectivity provided by Intel, details see: https: //software.intel.com/en-us/ccf.X86 optimization is provided by Intel applies a framework X86 platform. GCC (GNU Compiler Collection, GNU Compiler Collection) is a set of multiple programming languages ​supported by the GNU compiler project development. ICC (Intel C ++ Compiler) was developed by Intel C / C ++ compiler. About ICC See https://software.intel.com/en-us/forums/intel-c-compiler 
 

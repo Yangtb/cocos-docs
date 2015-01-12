@@ -18,7 +18,7 @@ Please refer to [Step 3. Obtain a Facebook App ID - Getting Started with the Fac
 
 ![](images/modify_info_plist.jpg)
 
-**Step4**: Open target `myProject iOS` in the project root, open `Build Settings` page, then search for `Other Linker Flags`, and add `-ObjC` linker flag.
+**Step4**: Open target `myProject iOS` in the project root, open `Build Settings` page, then search for `Other Linker Flags`, and add `-ObjC` linker flag(Maybe you need to add `CoreVideo.framework` and `GameController.framework` if you compile failed).
 
 ![](images/linker_flag.jpg)
 
@@ -62,13 +62,13 @@ Because Facebook support for Cocos2d-JS is based on Plugin-x, you need to add Pl
 
 ## Add Plugin-x for JSB
 
-The next step is to include and register the Javascript bindings code in SpiderMonkey.
+The next step is to include and register the JavaScript bindings code in SpiderMonkey.
 
 **Step1**: Add jsb_pluginx.js (under `myProject/frameworks/js-bindings/cocos2d-x/plugin/jsbindings/script`) into `myProject`, and make sure it is listed in `Copy Bundle Resources` section under `Build Phases` tab.
 
 ![](images/jsb_pluginx_js.jpg)
 
-**Step2**: Find `Classes` folder, add Javascript bindings related header files in `AppDelegate.cpp`, there are two header files: `jsb_cocos2dx_pluginx_auto.hpp` and `jsb_pluginx_extension_registration.h`.
+**Step2**: Find `Classes` folder, add JavaScript bindings related header files in `AppDelegate.cpp`, there are two header files: `jsb_cocos2dx_pluginx_auto.hpp` and `jsb_pluginx_extension_registration.h`.
 
     ```
 	#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS || CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
@@ -77,7 +77,7 @@ The next step is to include and register the Javascript bindings code in SpiderM
 	#endif
     ```
 
-**Step3**: As the following code snippet, register Javascript bindings code in `AppDelegate::applicationDidFinishLaunching`function of `AppDelegate.cpp`. **Notice**: Please pay attention to the location of the code.
+**Step3**: As the following code snippet, register JavaScript bindings code in `AppDelegate::applicationDidFinishLaunching`function of `AppDelegate.cpp`. **Notice**: Please pay attention to the location of the code.
 
     ```
     bool AppDelegate::applicationDidFinishLaunching()

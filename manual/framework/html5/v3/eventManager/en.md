@@ -16,7 +16,7 @@ To respond to events, you must first create an **cc.EventListener**. There are f
 
 * `cc.EventListenerTouch` - responds to touch events
 * `cc.EventListenerKeyboard` - responds to keyboard events
-* `cc.EventListenerAcceleration` - reponds to accelerometer events
+* `cc.EventListenerAcceleration` - responds to accelerometer events
 * `cc.EventListenMouse` - responds to mouse events
 * `cc.EventListenerCustom` - responds to custom events
 
@@ -192,7 +192,7 @@ Before using accelerometer events, you need to enable them on the cc.inputManage
 
 `cc.inputManager.setAccelerometerEnabled(true);`
 
-Then create the corrresponding listener. 
+Then create the corresponding listener. 
 
 ```javascript
 
@@ -232,7 +232,7 @@ Mouse click event dispatching and touch event dispatching have been managed by c
 
 ###Custom Event
 
-The event types above are defined by the system, and the events (such as touch screen, keyboard response etc) are triggered by the system automatically. In addition, you can make your own _custom events_ which are not triggered by the system, but by your code, as follows:
+The event types above are defined by the system, and the events (such as touch screen, keyboard response etc.) are triggered by the system automatically. In addition, you can make your own _custom events_ which are not triggered by the system, but by your code, as follows:
 
 ```javascript
 
@@ -415,7 +415,7 @@ event: cc.EventListener.ACCELERATION
 
 optional parameters:
 
-1. callback, function, Acclerometer event callback
+1. callback, function, Accelerometer event callback
 
 **Create an EventListenerCustom object:**
 

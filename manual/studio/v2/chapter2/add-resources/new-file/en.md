@@ -10,7 +10,7 @@ Type: Click to select the file type you want to create;
 
 Description: The file type descriptive;
 
-Size: Only layer supports canvas size。
+Size: Only layer supports canvas size.
 
 ####Scene File
 The scene is Cocos2d-x essential elements, can be used to create level, menus and so on. Game is made of scenes, just like movies.

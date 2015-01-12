@@ -52,14 +52,14 @@
 	- Scripting
 	    - Usage of binding-generator
 		- Lua
-		- Javascript
-		    - [Remote Debugging on Javascript Bindings](../manual/framework/native/v3/js-remote-debugger/en.md)
+		- JavaScript
+		    - [Remote Debugging on JavaScript Bindings](../manual/framework/native/v3/js-remote-debugger/en.md)
 	- Debugging
 		- CCLog
 		- CCConsole
 	- File Stream
-	- Intergrating with 3rd SDK
-		- [use webbroswer to integrate Alipay on Windows Phone 8](../manual/framework/native/v2/sdk-integration/wp8-webbrowser/en.md)
+	- Integrating with 3rd SDK
+		- [use web browser to integrate Alipay on Windows Phone 8](../manual/framework/native/v2/sdk-integration/wp8-webbrowser/en.md)
 		- [integrate third SDK in Windows Phone 8](../manual/framework/native/v2/sdk-integration/wp8-thirdSDK/en.md)
 	- Cocos2d-html5
         - [Highlighted release note of Cocos2d-JS v3.0](../manual/framework/html5/release-notes/v3.0/release-note/en.md)
@@ -82,12 +82,12 @@
             - [Simplified action APIs](../manual/framework/html5/v3/cc-actions/en.md)
             - [Object Pool](../manual/framework/html5/v3/cc-pool/en.md)
             - [Bake Layer](../manual/framework/html5/v3/bake-layer/en.md)
-            - [Reflection from Javascript to JAVA](../manual/framework/html5/v3/reflection/en.md)
-            - [Reflection from Javascript to Objective-C](../manual/framework/html5/v3/reflection-oc/en.md)
-            - [Cocos2d-html5 modulization](../manual/framework/html5/v3/moduleconfig-json/en.md)
+            - [Reflection from JavaScript to JAVA](../manual/framework/html5/v3/reflection/en.md)
+            - [Reflection from JavaScript to Objective-C](../manual/framework/html5/v3/reflection-oc/en.md)
+            - [Cocos2d-html5 modularization](../manual/framework/html5/v3/moduleconfig-json/en.md)
             - [Pure configuration file](../manual/framework/html5/v3/project-json/en.md)
-            - [Basic data refactoration](../manual/framework/html5/v3/basic-data/en.md)
-            - [Singleton objects refactoration](../manual/framework/html5/v3/singleton-objs/en.md)
+            - [Basic data refactorization](../manual/framework/html5/v3/basic-data/en.md)
+            - [Singleton objects refactorization](../manual/framework/html5/v3/singleton-objs/en.md)
             - [Unified create functions](../manual/framework/html5/v3/create-api/en.md)
             - [Loading resource with cc.loader](../manual/framework/html5/v3/cc-loader/en.md)
             - [System information in cc.sys](../manual/framework/html5/v3/cc-sys/en.md)
@@ -163,12 +163,14 @@
     		- [Panel](../manual/studio/v2/chapter3/containers/panel/en.md)
     		- [ScrollView](../manual/studio/v2/chapter3/containers/scrolledview/en.md)
     		- [PageView](../manual/studio/v2/chapter3/containers/pageview/en.md)
+    	- Custom
+    		- [Armature](../manual/studio/v2/chapter3/custom/armature/en.md)
     - [How to edit animation](../manual/studio/v2/chapter4/how-to-edit-animation/en.md)
     	- [Add Key Frame](../manual/studio/v2/chapter4/add-key-frame/en.md)
     	- [Animation Property](../manual/studio/v2/chapter4/animation-property/en.md)
     	- [Use onion skin](../manual/studio/v2/chapter4/onionskin/en.md)
 - Tutorials
-	- Pakour Game with Javascript (Cocos2d-JS v3.0)
+	- Parkour Game with JavaScript (Cocos2d-JS v3.0)
 		- [1. Setup Development Environment](../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter1/en.md)
 		- [2. Hello World Cocos2d-JS](../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter2/en.md)
 		- [3. Make your First Game Scene](../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter3/en.md)
@@ -179,7 +181,7 @@
 		- [8. Add Coin and Obstacles](../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter8/en.md)
 		- [9. Add Game Over Logic And More](../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter9/en.md)
         - [10. Add Audio Effect into Parkour Game](../tutorial/framework/html5/parkour-game-with-javascript-v3.0/chapter10/en.md)
-	- Pakour Game with Javascript (Cocos2d-html5 v2.2.2)
+	- Parkour Game with JavaScript (Cocos2d-html5 v2.2.2)
 		- [1. Setup Development Environment](../tutorial/framework/html5/parkour-game-with-javascript/chapter1/en.md)
 		- [2. Hello World Cocos2d-html5](../tutorial/framework/html5/parkour-game-with-javascript/chapter2/en.md)
 		- [3. Make your First Game Scene](../tutorial/framework/html5/parkour-game-with-javascript/chapter3/en.md)

@@ -79,7 +79,7 @@ audioEngine.playEffect(s_music_jump);
 audioEngine.playEffect(s_music_pickup_coin);
 ```
 
-Save all the changes and run the game. Now your game rock with a world full of audios.
+Save all the changes and run the game. Now your game rock with a world full of audio.
 
 ## Summary
 

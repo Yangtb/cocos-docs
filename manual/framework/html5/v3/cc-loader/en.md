@@ -18,13 +18,13 @@ In this way we can manage resources better and developers can customize their ow
 
 ##### resPath
 
-Base path of resources (Exclude audios).
+Base path of resources (Exclude audio).
 
 We set `cc.loader.resPath = "res"`, then the full-path of `a.png` will be `res/a.png`.
 
 ##### audioPath
 
-Base path of audios.
+Base path of audio.
 
 ##### getXMLHttpRequest
 
@@ -32,7 +32,7 @@ The way to get XMLHttpRequest.
 
 ##### loadJs
 
-The way to load javascript.
+The way to load JavaScript.
 
 ```script
 Arguments:
@@ -75,7 +75,7 @@ cc.loader.loadJs("src/a.js", function(err){
 
 ##### loadJsWithImg
 
-Load javascript with a loading image.
+Load JavaScript with a loading image.
 
 ##### loadTxt
 

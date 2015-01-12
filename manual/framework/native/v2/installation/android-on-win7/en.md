@@ -8,7 +8,7 @@ need to be downloaded during the configuration process.
 
 ##Download Cocos2d-x 2.2 
 
-we can go to [ Cocos2d-x ](http://www.cocos2d-x.org) offical website to download the latest stable version of Cocos2d-x.
+we can go to [ Cocos2d-x ](http://www.cocos2d-x.org) official website to download the latest stable version of Cocos2d-x.
 
 ![](./res/getcocos2d-x.jpeg)
 
@@ -22,13 +22,13 @@ From the above picture, we can see that there are two versions available, one is
 
 In this tutorial, I will take Cocos2d-x 2.2 as a example.
 
-(Note: If you want to download any old version of Cocos2d-x, you can go to the link named "looking for an old versoin?". But I highly recommend you to try out the lastest version of Cocos2d-x, it has many new features and bug fixes.).
+(Note: If you want to download any old version of Cocos2d-x, you can go to the link named "looking for an old version?". But I highly recommend you to try out the latest version of Cocos2d-x, it has many new features and bug fixes.).
 
 Ok, right click the download link and  choose "save link as..." to save the zip file to a proper location. In our case, the location is C:\cocos2d-x-2.2.0.
 
 (Update: Don't put Cocos2d-x folder under c:\, since it will cause many privilege related problems. Try to put it in another disk, like D:\, E:\ etc.)
 
-Now we can unzip the package and the unziped directory looks like this:
+Now we can unzip the package and the unzipped directory looks like this:
 
 ![cocos2dxdirector](res/cocos2dxdirectory.jpeg)
 
@@ -60,9 +60,9 @@ Now let's download  [ Android SDK ](http://developer.android.com/sdk/index.html#
 - The latest Android platform
 - The latest Android system image for the emulator
 
-It will take you several minutes to finish it, depending on your network bandwidth. After downoload, you can unzip it and put it on the followiwng director:C:\adt-bundle-windows-x86_64. In the folder, there is a eclipse.exe file under C:\adt-bundle-windows-x86_64\eclipse folder, I sent it to the desktop as a shortcut.
+It will take you several minutes to finish it, depending on your network bandwidth. After download, you can unzip it and put it on the following director:C:\adt-bundle-windows-x86_64. In the folder, there is a eclipse.exe file under C:\adt-bundle-windows-x86_64\eclipse folder, I sent it to the desktop as a shortcut.
 
-Now we can double click the shortcut on the desktop, then the eclipse will be launched along with a prompt dialog appeares. It asks us to set a default workspace. You can just choose OK to accept the deault settings. 
+Now we can double click the shortcut on the desktop, then the eclipse will be launched along with a prompt dialog appearing. It asks us to set a default workspace. You can just choose OK to accept the default settings. 
 
 Before importing the sample Android project, we need to setup a new environment variable named ANDROID_SDK which value is C:\adt-bundle-windows-x86_64\sdk.
 
@@ -121,7 +121,7 @@ Now you can run this command:
 
 If there are no errors. Congratulations, your Cocos2d-x android development environment on win7 is working.
 
-(Note: you can also run your android applicaton through Eclipse. Right click the androd project and choose "Run as Android Application".)
+(Note: you can also run your android application through Eclipse. Right click the Android project and choose "Run as Android Application".)
 
 ##Install the apk on your android phone.
 
@@ -134,7 +134,7 @@ adb install  bin/HelloCpp.apk
 (Note: you should do some configurations if the above instruction is failed. Here is the [solution](http://stackoverflow.com/questions/4756451/how-to-install-an-apk-file-on-an-android-phone))
 
 
-##Troubleshootings
+##Troubleshooting
 
 1. The Android AndroidManifest.xml is missing error.  [solution](http://stackoverflow.com/questions/12525969/androidmanifest-xml-is-missing)
 

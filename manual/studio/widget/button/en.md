@@ -37,7 +37,7 @@ The default option which displays the graphic (png/jpg) in Normal state.
 #### Font style
 
 Specifies a text font, which supports Arial, bold, and Microsoft Yahei.
-Drag a .ttf type file to properties area to change font style。
+Drag a .ttf type file to properties area to change font style.
 
 
 

@@ -202,7 +202,7 @@ SimpleRecognizer.prototype.movePoint = function(x, y) {
         return;
     }
 
-    // if diretcory change, not support Recongnizer
+    // if directory change, not support Recognizer
     if (this.result != newRtn) {
         this.result = "not support";
     }
@@ -339,7 +339,7 @@ Now let's add three callbacks we needed to handle our touch event:
     },
 ```
 
-When you touch the scrren the *onTouchBegan* method will be called. When you hold your finger and move it around, the *onTouchMoved* method will
+When you touch the screen the *onTouchBegan* method will be called. When you hold your finger and move it around, the *onTouchMoved* method will
 be called. When you release your finger, the *onTouchEnded* method will be called.
 
 Here we have used our simple gesture recognizer to detect the "swipe out" gesture.

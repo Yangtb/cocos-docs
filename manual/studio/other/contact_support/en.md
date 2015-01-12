@@ -7,7 +7,7 @@
 - "Help" Menu
 	After a successful installation Cocos Studio,Click the "Menu" -> "Help" -> "View Help" will automatically open the page [manual.CocoStudio.org](http://manual.CocoStudio.org)
 - F1 Help
-	After a successful installation Cocos Studio, you can click "F1" on the keyboardto to open the Help link.
+	After a successful installation Cocos Studio, you can click "F1" on the keyboard to to open the Help link.
 
 ### Other Channels
 
@@ -25,8 +25,8 @@ Link to [User Manual](http://manual.cocostudio.org) page you can download the pu
 
 Use and the learning process can looking for a known problem in the following communities, for unknown problems can post new questions posted for help.
 
-Chinese Forum : [http://www.cocoachina.com](http://www.cocoachina.com/bbs/thread.php?fid=48)
-English Forum：[http://www.cocos2d-x.org](http://www.cocos2d-x.org/forums/24)
+Chinese Forum: [http://www.cocoachina.com](http://www.cocoachina.com/bbs/thread.php?fid=48)
+English Forum: [http://www.cocos2d-x.org](http://www.cocos2d-x.org/forums/24)
 
 ### Social Support
 

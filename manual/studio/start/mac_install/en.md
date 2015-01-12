@@ -33,7 +33,7 @@ Go to [http://www.cocos2d-x.org](http://www.cocos2d-x.org/download) to download 
 2. Click "Change Install Location .." modify the installation directory.
 3. Click "Go Back" to return to previous items. 
    
-- After installation is complete,  in "Launchpad" will be able to see the following icons.   
+- After installation is complete, in "Launchpad" will be able to see the following icons.   
 
   ![](./res/7.png) 
 
@@ -42,4 +42,4 @@ Go to [http://www.cocos2d-x.org](http://www.cocos2d-x.org/download) to download 
 	A：No Mac version provides synchronized version of Windows, until after Mac version was stable will be released simultaneously Windows version.
 
 - Q：How to solve the installation fails？    
-   A：Installation failed recommended to check whether there is enough disk space,Whether the password is correct.If you start the editor does not work properly, recommended to uninstall and install again .Get help from [Get Help page](../../contact_support/zh.md), when reinstalling not solve the problem.
+   A：Installation failed recommended to check whether there is enough disk space,Whether the password is correct. If you start the editor does not work properly, recommended to uninstall and install again. Get help from [Get Help page](../../contact_support/zh.md), when reinstalling not solve the problem.

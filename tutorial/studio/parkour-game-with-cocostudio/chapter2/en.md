@@ -16,7 +16,7 @@ All tests of the CocoStudio’s API can be found in Cocos2d-html5. For example, 
 
 ![](res/test-freame-event.png)
 
-*Figure 2: CocoStudio Test - Test Freame Event*<br></br>
+*Figure 2: CocoStudio Test - Test Frame Event*<br></br>
 
 ![](res/armature-test.png)
 

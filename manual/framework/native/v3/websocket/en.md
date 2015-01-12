@@ -39,7 +39,7 @@ virtual void onClose(cocos2d::network::WebSocket* ws);
 virtual void onError(cocos2d::network::WebSocket* ws, const cocos2d::network::WebSocket::ErrorCode& error);
 ```
 
-### Creating and Initializating
+### Creating and Initializing
 
 WebSocket.org provides a server to test WebSocket, which address is "ws://echo.websocket.org".
 
@@ -114,7 +114,7 @@ void WebSocketTestLayer::onClose(network::WebSocket* ws)
 
 #### onError
 
-If an error was occured while sending a message to server, client will receive **onError** message.
+If an error was occurred while sending a message to server, client will receive **onError** message.
 
 ```
 void WebSocketTestLayer::onError(network::WebSocket* ws, const network::WebSocket::ErrorCode& error)

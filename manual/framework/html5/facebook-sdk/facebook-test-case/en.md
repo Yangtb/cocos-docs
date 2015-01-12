@@ -2,7 +2,7 @@
 
 ## A full featured test case
 
-To make it eaiser for all developers to start developing games with the Facebook support, we have provided a complete test case. It have covered all APIs and demonstrated how to correctly use them.
+To make it easier for all developers to start developing games with the Facebook support, we have provided a complete test case. It have covered all APIs and demonstrated how to correctly use them.
 
 If you are not until familiar with Facebook support for Cocos2d-JS, we strongly suggest you to take a look at the [Cocos2d-x with Facebook](../zh.md) document and the [Facebook API Reference for Cocos2d-JS](../api-reference/zh.md) document.
 
@@ -14,14 +14,14 @@ First of all, you need the Cocos2d-JS engine package which can be downloaded [he
 - Open your terminal / command line tool, open the directory `samples/js-tests/`.
 - Run the following command : 
     + `cocos run -p web --port 8080` to run the test case on web. (Setting the port to 8080 is very import)
-    + `cocos run -p ios` to run the test case on an iOS simulator (Mac enviroment and Xcode required).
+    + `cocos run -p ios` to run the test case on an iOS simulator (Mac environment and Xcode required).
     + `cocos run -p android` to run the test case on an Android device or Android simulator.
 
 ## Explorer the Facebook test case
 
 By running the test case project, you will find a `Facebook SDK Test` in the list of test cases.
 
-There are two test cases which demostrate how to use the Facebook Integration.
+There are two test cases which demonstrate how to use the Facebook Integration.
 
 **1. Facebook SDK Sharing Test**
 

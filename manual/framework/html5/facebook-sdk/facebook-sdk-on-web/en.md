@@ -2,7 +2,7 @@
 
 This doc walks you through the integration of Facebook support for Cocos2d-JS on Web.
 
-Although Facebook has [Facebook SDK for Javascript](http://developers.facebook.com/docs/javascript), if your game has both mobile version and web version, we highly recommend you to use Cocos2d-JS's Facebook support for the web version because you can use the same code for both mobile and web without writing them separately for each platform.
+Although Facebook has [Facebook SDK for JavaScript](http://developers.facebook.com/docs/javascript), if your game has both mobile version and web version, we highly recommend you to use Cocos2d-JS's Facebook support for the web version because you can use the same code for both mobile and web without writing them separately for each platform.
 
 **Step1**: Create your Facebook App on Canvas as described in [Getting Started with Canvas](http://developers.facebook.com/docs/games/canvas/). Add the URL to the web host for your sample under the "Canvas URL" and "Secure Canvas URL" section.
 

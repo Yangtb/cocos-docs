@@ -210,7 +210,7 @@ This method will remove a chipmunk object by its shape.
 ###Wrap it up: Add Creation and Disposable Logic in checkAndReload Method
 When the map is moved, we should also call *loadObject* method to recreate the "Coins & Rocks".
 
-And also we sould remove all unused objects by calling *removeObjects* method.
+And also we should remove all unused objects by calling *removeObjects* method.
 
 Here is the code snippets:
 ```
